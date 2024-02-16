@@ -29,15 +29,23 @@ label {
 	color: #ccc;
 }
 
-input {
+input,
+textarea {
 	@apply outline-none;
 }
-
+.answers-sectioin input,
+.answers-sectioin textarea {
+	@apply outline-[#C6D3C6];
+}
 input[type="checkbox"] {
 	position: relative !important;
 	appearance: none;
 	box-sizing: content-box;
 	overflow: hidden;
+}
+
+#checkbox3::before {
+	@apply bg-[#F6FAF6] border-[#E4E9E4]
 }
 
 input[type="checkbox"]:before {
@@ -211,7 +219,8 @@ input[type="checkbox"]:checked:after {
 }
 
 /* hero section */
-.hero-section {
+.hero-section,
+.answers-sectioin {
 	background-image: url(../images/hero-bg.png);
 	@apply bg-cover bg-no-repeat;
 }
@@ -299,4 +308,25 @@ swiper-button-prev {
 .catalog-section {
 	background-image: url(../images/hero-bg.png);
 	@apply bg-no-repeat bg-cover pt-[95px] pb-[207px];
+}
+
+.read-more::before {
+	content: "";
+	@apply absolute bottom-[6px] w-full h-[0.5px] bg-green
+}
+
+/* acordion */
+.accordion.active {
+	@apply rounded-tl-[5px] rounded-tr-[5px] rounded-bl-none rounded-br-none bg-green text-white
+}
+
+.accordion.active+.panel {
+	@apply px-10 py-[30px]
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	border-radius: 0px 0px 5px 5px;
 }
