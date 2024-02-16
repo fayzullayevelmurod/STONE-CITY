@@ -10,16 +10,132 @@ body {
 	@apply font-Monserat font-normal
 }
 
+fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	align-items: flex-start;
+	min-width: 400px;
+}
+
+label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.aside {
+	color: #ccc;
+}
+
+input {
+	@apply outline-none;
+}
+
+input[type="checkbox"] {
+	position: relative !important;
+	appearance: none;
+	box-sizing: content-box;
+	overflow: hidden;
+}
+
+input[type="checkbox"]:before {
+	content: '';
+	display: block;
+	box-sizing: content-box;
+	width: 36px;
+	height: 36px;
+	transition: 0.2s border-color ease;
+	border-radius: 3px;
+	background: rgb(255, 255, 255);
+	border: 1px solid transparent;
+}
+
+input[type="checkbox"]:checked:before {
+	border-color: rgb(98, 207, 115);
+	transition: 0.5s border-color ease;
+}
+
+input[type="checkbox"]:after {
+	content: '';
+	display: block;
+	position: absolute;
+	box-sizing: content-box;
+	top: 50%;
+	left: 50%;
+	transform-origin: 50% 50%;
+	background-color: #62CF73;
+	width: 16px;
+	height: 16px;
+	border-radius: 100vh;
+	transform: translate(-50%, -50%) scale(0);
+}
+
+input[type="checkbox"]:before {
+	border-radius: 5px;
+}
+
+input[type="checkbox"]:after {
+	width: 13px;
+	height: 20px;
+	border-radius: 0;
+	transform: translate(-50%, -85%) scale(0) rotate(45deg);
+	background-color: transparent;
+	box-shadow: 4px 4px 0px 0px #62CF73;
+}
+
+input[type="checkbox"]:checked:after {
+	animation: toggleOnCheckbox 0.2s ease forwards;
+}
+
+@keyframes toggleOnCheckbox {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -85%) scale(0) rotate(45deg);
+	}
+
+	70% {
+		opacity: 1;
+		transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+	}
+
+	100% {
+		transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+	}
+}
+
+@keyframes toggleOnRadio {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(0);
+	}
+
+	70% {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(0.8);
+	}
+}
+
 .container {
 	@apply max-w-[1420px] mx-auto;
 }
 
-.title-text>span {
-	@apply text-green
+.title-text {
+	@apply font-Vollkorn text-[56px] font-normal leading-[55px] text-black;
 }
 
-.title-text {
-	@apply font-Vollkorn text-[56px] font-normal leading-[55px]
+.title-text__two {
+	@apply font-Vollkorn text-[56px] font-normal leading-[66px];
+}
+
+.title-text>span,
+.title-text__two>span {
+	@apply text-green;
 }
 
 .btn {
@@ -28,6 +144,19 @@ body {
 
 .btn:hover {
 	@apply bg-black
+}
+
+.border-item {
+	@apply relative
+}
+
+.border-item:hover::before {
+	@apply block
+}
+
+.border-item::before {
+	content: "";
+	@apply absolute bottom-[7px] w-full h-[0.5px] bg-green hidden
 }
 
 /* header start */
@@ -70,7 +199,7 @@ body {
 }
 
 .header-bottom__dropdown {
-	visibility: hidden;
+	@apply invisible
 }
 
 .header-bottom__link-first:hover svg>path {
@@ -84,19 +213,17 @@ body {
 /* hero section */
 .hero-section {
 	background-image: url(../images/hero-bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+	@apply bg-cover bg-no-repeat;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-	display: none;
+	@apply hidden
 }
 
 .swiper-button-next,
 swiper-button-prev {
-	width: 27px;
-	height: 21px;
+	@apply w-[27px] h-[27px]
 }
 
 .swiper-button-prev {
@@ -105,4 +232,61 @@ swiper-button-prev {
 
 .swiper-button-next {
 	right: -77px !important;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #62CF73 !important;
+}
+
+.swiper-pagination-bullet {
+	@apply bg-[#D3D3D3]
+}
+
+/* monuments-box */
+.monuments-box:hover a {
+	@apply text-green
+}
+
+.monuments-box:hover a::before {
+	@apply block
+}
+
+.bg-grass {
+	background-image: url(../images/bg-grass.png);
+	@apply bg-cover bg-no-repeat;
+}
+
+.bg-hero {
+	background-image: url(../images/hero-bg.png);
+	@apply bg-cover bg-no-repeat;
+}
+
+.bg-grass-3 {
+	background-image: url(../images/bg-grass-3.png);
+	@apply bg-cover bg-no-repeat;
+}
+
+.bg-pitcher {
+	background-image: url(../images/pitcher.png);
+	@apply bg-no-repeat bg-[#EFF3EF];
+	background-position: bottom right;
+}
+
+.services-box {
+	background-image: url(../images/services-bg.png);
+	@apply bg-cover bg-no-repeat pr-[170px] py-[43px] pl-[52px];
+}
+
+.stone-box {
+	background-image: url(../images/stone-bg.png);
+	@apply bg-cover bg-no-repeat pr-[117px] pt-[54px] pb-[67px] pl-[55px] rounded-[25px];
+}
+
+.form-section {
+	background-image: url(../images/form-bg.png);
+	@apply bg-cover bg-no-repeat pt-[87px] pb-[99px];
+}
+
+.service-boxes {
+	grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
 }

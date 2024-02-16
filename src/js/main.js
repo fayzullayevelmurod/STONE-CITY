@@ -5,3 +5,16 @@ var swiper = new Swiper(".mySwiper", {
 	},
 	loop: true
 });
+
+var swiper = new Swiper(".work-swiper", {
+	slidesPerView: 2,
+	spaceBetween: 10,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	navigation: {
+		nextEl: ".swiper-button-next2",
+		prevEl: ".swiper-button-prev2",
+	},
+});

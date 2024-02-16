@@ -18,7 +18,7 @@ module.exports = {
 			},
 			fontSize: {
 				"1xl": "22px"
-			}
+			},
 		},
 	},
 	plugins: [],

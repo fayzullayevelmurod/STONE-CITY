@@ -86,8 +86,8 @@
 			<div class="bg-green py-2">
 				<div class="container flex items-center justify-between">
 					<ul class="flex space-x-[50px] py-[10px] text-base font-semibold leading-6 text-white">
-						<li class="relative header-bottom__link-first">
-							<a class=" relative" href="#!">
+						<li class="relative z-10 header-bottom__link-first">
+							<a class="relative" href="#!">
 								<div class="flex items-center space-x-[11px] hover:text-silver-gray">
 									<span>Памятники</span>
 									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,28 +96,28 @@
 											fill="#fff" />
 									</svg>
 								</div>
-								<ul
-									class="absolute header-bottom__dropdown top-[6px] -z-10 pt-[50px] left-[-30px] max-w-[193px] bg-[#5B7B60] pb-5 px-[30px] space-y-3 font-semibold text-[15px]">
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
-									</li>
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
-									</li>
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
-									</li>
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
-									</li>
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
-									</li>
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
-									</li>
-								</ul>
 							</a>
+							<ul
+								class="absolute header-bottom__dropdown z-[-10] top-[6px] pt-[50px] left-[-30px] max-w-[193px] bg-[#5B7B60] pb-5 px-[30px] space-y-3 font-semibold text-[15px]">
+								<li>
+									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
+								</li>
+								<li>
+									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
+								</li>
+								<li>
+									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
+								</li>
+								<li>
+									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
+								</li>
+								<li>
+									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
+								</li>
+								<li>
+									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
+								</li>
+							</ul>
 						</li>
 						<li>
 							<a class="header-bottom__link" href="#!">Услуги</a>
@@ -148,7 +148,6 @@
 		<!-- main -->
 		<main class="main">
 			<section class="hero-section pt-[105px] pb-[113px]">
-
 				<div class="container relative">
 					<div class="swiper mySwiper">
 						<div class="swiper-wrapper">
@@ -185,11 +184,378 @@
 
 			</section>
 
-			<section class="making-monuments">
+			<section class="making-monuments mt-[100px]">
 				<div class="container">
-					<!-- <h3 class="title-text">Изготовление памятников на могилу</h3> -->
+					<h3 class="title-text max-w-[692px] mb-[45px]">Изготовление <span>памятников</span> на могилу</h3>
+
+					<div class="flex justify-between">
+						<div class="py-[43px] px-[40px] bg-[#EFF3EF] rounded-3xl bg-grass">
+							<div class="grid grid-cols-2 gap-2">
+								<div
+									class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+									<img src="./src/images/monuments-1.png" alt="">
+									<a class="text-black font-medium text-lg border-item" href="#!">Гранит</a>
+								</div>
+
+								<div
+									class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+									<img src="./src/images/monuments-2.png" alt="">
+									<a class="text-black font-medium text-lg border-item" href="#!">Мрамор</a>
+								</div>
+
+								<div
+									class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+									<img src="./src/images/monuments-3.png" alt="">
+									<a class="text-black font-medium text-lg border-item" href="#!">Коелги</a>
+								</div>
+
+								<div
+									class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+									<img src="./src/images/monuments-4.png" alt="">
+									<a class="text-black font-medium text-lg border-item" href="#!">Габбро</a>
+								</div>
+
+								<div
+									class="flex items-center py-[20px] pl-[20px] pr-[14px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+									<img src="./src/images/monuments-5.png" alt="">
+									<a class="text-black font-medium text-lg border-item" href="#!">В форме креста, православные</a>
+								</div>
+
+								<div
+									class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+									<img src="./src/images/monuments-7.png" alt="">
+									<a class="text-black font-medium text-lg border-item" href="#!">Мусульманские</a>
+								</div>
+							</div>
+						</div>
+						<div class="grid grid-cols-2 gap-2 py-[43px] px-[40px] bg-[#EFF3EF] rounded-3xl bg-hero">
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-8.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Вертикальные</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-9.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Горизонтальные</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-10.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Двойные</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-6.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Сердце</a>
+							</div>
+
+							<div
+								class="flex items-center py-[20px] pl-[20px] pr-[14px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-11.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Книги</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-12.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Мемориальные комплексы</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-13.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Недорогие</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-14.png" alt="">
+								<a class="text-black font-medium text-lg border-item max-w-[105px]" href="#!">Минареты под крест</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex justify-center gap-[118px] my-[100px]">
+						<div class="flex items-start space-x-[23px]">
+							<img src="./src/images/icons/prices-icon.svg" alt="">
+							<div>
+								<h4 class="font-normal text-2xl leading-6 mb-[10px] text-green uppercase">Честные цены</h4>
+								<p class="text-base leading-6 max-w-[303px] text-[#595959]">Не завышаем цены на материалы, поэтому Вы
+									можете купить изделие из камня
+									недорого</p>
+							</div>
+						</div>
+						<div class="flex items-start space-x-[23px]">
+							<img src="./src/images/icons/security-icon.svg" alt="">
+							<div>
+								<h4 class="font-normal text-2xl leading-6 mb-[10px] text-green uppercase">гарантия</h4>
+								<p class="text-base leading-6 max-w-[303px] text-[#595959]">Предоставим гарантию на изделияиз камня и
+									работы по монтажуи установке от 2-х до 25 лет</p>
+							</div>
+						</div>
+						<div class="flex items-start space-x-[23px]">
+							<img src="./src/images/icons/cart-icon.svg" alt="">
+							<div>
+								<h4 class="font-normal text-2xl leading-6 mb-[10px] text-green uppercase">рассрочка платежа</h4>
+								<p class="text-base leading-6 max-w-[303px] text-[#595959]">Предоставим рассрочку платежабез процентов и
+									комиссий</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex justify-between">
+						<div class="grid grid-cols-2 gap-2 py-[43px] px-[40px] rounded-3xl bg-pitcher">
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/fences-1.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Оградки</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/fences-2.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Столы и скамейки</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/fences-3.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Отсыпка мраморной крошкой</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/fences-4.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Цветники</a>
+							</div>
+
+							<div
+								class="flex items-center py-[20px] pl-[20px] pr-[14px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/fences-5.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Цоколи</a>
+							</div>
+						</div>
+						<div class="grid grid-cols-2 gap-2 py-[43px] px-[40px] bg-[#EFF3EF] rounded-3xl bg-grass-3">
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-boy.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Мужской</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-girl.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Женский</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-family.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Семейный</a>
+							</div>
+
+							<div
+								class="flex items-center p-[20px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-child.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Детский</a>
+							</div>
+
+							<div
+								class="flex items-center py-[20px] pl-[20px] pr-[14px] space-x-[14px] rounded-[5px] bg-[#F6FAF6] w-[306px] hover:border-[#6cbf7a] border border-transparent cursor-pointer monuments-box">
+								<img src="./src/images/monuments-parents.png" alt="">
+								<a class="text-black font-medium text-lg border-item" href="#!">Для родителей</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex justify-center gap-[118px] my-[100px]">
+						<div class="flex items-start space-x-[23px]">
+							<img src="./src/images/icons/design.svg" alt="">
+							<div>
+								<h4 class="font-normal text-2xl leading-6 mb-[10px] text-green uppercase">проектирование</h4>
+								<p class="text-base leading-6 max-w-[303px] text-[#595959]">Не завышаем цены на материалы,
+									поэтому Вы можете купить изделие из камня недорого</p>
+							</div>
+						</div>
+						<div class="flex items-start space-x-[23px]">
+							<img src="./src/images/icons/message.svg" alt="">
+							<div>
+								<h4 class="font-normal text-2xl leading-6 mb-[10px] text-green uppercase">коммуникации</h4>
+								<p class="text-base leading-6 max-w-[303px] text-[#595959]">Предоставим гарантию на изделияиз камня и
+									работы по монтажуи установке от 2-х до 25 лет</p>
+							</div>
+						</div>
+						<div class="flex items-start space-x-[23px]">
+							<img src="./src/images/icons/truck.svg" alt="">
+							<div>
+								<h4 class="font-normal text-2xl leading-6 mb-[10px] text-green uppercase">установка</h4>
+								<p class="text-base leading-6 max-w-[303px] text-[#595959]">Предоставим рассрочку платежабез процентов и
+									комиссий</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
+
+			<section class="our-works">
+				<div class="container">
+					<div class="grid grid-cols-2 gap-[20px]">
+						<div class="bg-hero rounded-[25px] py-[43px] pl-[54px] pr-[51px]">
+							<div class="flex items-center justify-between">
+								<h3 class="title-text__two">Наши <span>работы</span></h3>
+								<div class="flex items-center space-x-[67px]">
+									<div class="swiper-button-prev2">
+										<img src="./src/images/icons/prev-icon.svg" alt="">
+									</div>
+									<div class="swiper-button-next2">
+										<img src="./src/images/icons/next-icon.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="swiper work-swiper mt-[22px] pb-[56px]">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="./src/images/work-1.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="./src/images/work-2.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="./src/images/work-1.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="./src/images/work-2.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="./src/images/work-1.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="./src/images/work-2.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="./src/images/work-2.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="./src/images/work-2.png" alt="">
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+
+						<div class="services-box">
+							<h3 class="title-text__two leading-[66px] text-white mb-[22px]">Услуги</h1>
+
+								<div class="space-y-[2px]">
+									<a class="p-[20px] bg-white rounded-[5px] hover:bg-[#6CBF79] hover:text-white text-black font-medium text-lg leading-6 block"
+										href="#!">Оформление памятника</a>
+
+									<a class="p-[20px] bg-white rounded-[5px] hover:bg-[#6CBF79] hover:text-white text-black font-medium text-lg leading-6 block"
+										href="#!">Изготовление, монтаж и благоустройство</a>
+
+									<a class="p-[20px] bg-white rounded-[5px] hover:bg-[#6CBF79] hover:text-white text-black font-medium text-lg leading-6 block"
+										href="#!">Установка фундамента</a>
+									<a class="p-[20px] bg-white rounded-[5px] hover:bg-[#6CBF79] hover:text-white text-black font-medium text-lg leading-6 block"
+										href="#!">Демонтаж памятника</a>
+									<a class="p-[20px] bg-white rounded-[5px] hover:bg-[#6CBF79] hover:text-white text-black font-medium text-lg leading-6 block"
+										href="#!">Укладка плитки</a>
+									<a class="p-[20px] bg-white rounded-[5px] hover:bg-[#6CBF79] hover:text-white text-black font-medium text-lg leading-6 block"
+										href="#!">Установка ограды</a>
+								</div>
+								<a class="btn flex items-center space-x-[15px] w-fit mt-[22px]" href="#!">
+									<span>Все услуги</span>
+									<img src="./src/images/icons/arrow-icon.svg" alt="">
+								</a>
+						</div>
+					</div>
+
+					<div class="my-[100px] stone-box">
+						<h3 class="title-text__two text-black">Изделия <span>из камня</span></h3>
+
+						<div class="grid grid-cols-4 gap-2 mt-[22px]">
+							<div class="flex items-center space-x-[14px] p-[20px] bg-[#F6FAF6] rounded-[5px]">
+								<img src="./src/images/stone-1.png" alt="">
+								<p class="font-medium text-lg text-black leading-6">Подоконники</p>
+							</div>
+							<div class="flex items-center space-x-[14px] p-[20px] bg-[#F6FAF6] rounded-[5px]">
+								<img src="./src/images/stone-2.png" alt="">
+								<p class="font-medium text-lg text-black leading-6">Столешницы</p>
+							</div>
+							<div class="flex items-center space-x-[14px] p-[20px] bg-[#F6FAF6] rounded-[5px]">
+								<img src="./src/images/stone-3.png" alt="">
+								<p class="font-medium text-lg text-black leading-6">Камины</p>
+							</div>
+							<div class="flex items-center space-x-[14px] p-[20px] bg-[#F6FAF6] rounded-[5px]">
+								<img src="./src/images/stone-4.png" alt="">
+								<p class="font-medium text-lg text-black leading-6">Отливы</p>
+							</div>
+
+							<div class="flex items-center space-x-[14px] p-[20px] bg-[#F6FAF6] rounded-[5px]">
+								<img src="./src/images/stone-5.png" alt="">
+								<p class="font-medium text-lg text-black leading-6">Порталы длякаминов</p>
+							</div>
+							<div class="flex items-center space-x-[14px] p-[20px] bg-[#F6FAF6] rounded-[5px]">
+								<img src="./src/images/stone-6.png" alt="">
+								<p class="font-medium text-lg text-black leading-6">Лестницы</p>
+							</div>
+							<div class="flex items-center space-x-[14px] p-[20px] bg-[#F6FAF6] rounded-[5px]">
+								<img src="./src/images/stone-7.png" alt="">
+								<p class="font-medium text-lg text-black leading-6">Гибкий камень</p>
+							</div>
+							<div class="flex items-center space-x-[14px] p-[20px] bg-[#F6FAF6] rounded-[5px]">
+								<img src="./src/images/stone-4.png" alt="">
+								<p class="font-medium text-lg text-black leading-6">Фасады из камня</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="form-section">
+				<div class="container flex items-start justify-between">
+					<div class="max-w-[413px]">
+						<h3 class="text-[56px] leading-[60px] font-Vollkorn text-white font-normal">Вы не нашли что искали?</h3>
+						<p class="text-xl leading-[30px] font-medium text-white mt-[14px]">Оставьте контакты и мы Вам поможем!</p>
+					</div>
+
+					<form>
+						<div class="flex items-end space-x-[14px]">
+							<div>
+								<label class="text-base leading-6 mb-1 block text-white font-medium">Ваше имя:</label>
+								<input class="rounded-[5px] border-none w-[240px] h-[56px] p-3" type="text" name="name">
+							</div>
+							<div>
+								<label class="text-base leading-6 mb-1 block text-white font-medium">Телефон:</label>
+								<input class="rounded-[5px] border-none w-[240px] h-[56px] p-3" type="text" name="name">
+							</div>
+							<button class="btn" type="submit">Отправить</button>
+						</div>
+						<label class="space-x-[10px] cursor-pointer mt-[24px]" for="checkbox">
+							<input type="checkbox" name='check' id="checkbox">
+							<span class="label-text text-base leading-6 font-medium text-white">Я согласен на обработку персональных
+								данных</span>
+						</label>
+					</form>
+				</div>
+			</section>
+
+			<section>
+				<div class="container my-[100px]">
+					<div class="flex justify-between items-center">
+						<h3 class="title-text__two text-black">Скидки</h3>
+						<a class="btn flex items-center space-x-[15px]" href="#!">
+							<span>все скидки</span>
+							<img src="./src/images/icons/arrow-icon.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</section>
+
 		</main>
 
 		<!-- footer -->
