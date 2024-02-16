@@ -33,10 +33,12 @@ input,
 textarea {
 	@apply outline-none;
 }
-.answers-sectioin input,
-.answers-sectioin textarea {
-	@apply outline-[#C6D3C6];
+
+.answers-sectioin input:focus,
+.answers-sectioin textarea:focus {
+	@apply border-[#C6D3C6];
 }
+
 input[type="checkbox"] {
 	position: relative !important;
 	appearance: none;
@@ -312,7 +314,7 @@ swiper-button-prev {
 
 .read-more::before {
 	content: "";
-	@apply absolute bottom-[6px] w-full h-[0.5px] bg-green
+	@apply absolute bottom-[5px] w-full h-[0.5px] bg-green
 }
 
 /* acordion */
@@ -329,4 +331,38 @@ swiper-button-prev {
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 	border-radius: 0px 0px 5px 5px;
+}
+
+.map-link,
+.footer-link {
+	@apply relative text-green font-medium text-sm leading-5.5
+}
+
+.map-link::before,
+.footer-link::before {
+	@apply absolute content-[''] w-full h-[0.5px] bg-green bottom-[2px]
+}
+
+.footer-link::before {
+	@apply bg-light-green;
+}
+
+.footer-link {
+	@apply text-light-green block w-fit;
+}
+
+.footer-top__link {
+	@apply leading-[28px] text-base text-[#C6C6C6C6] relative;
+}
+
+.footer-top__link:hover {
+	@apply text-light-green;
+}
+
+.footer-top__link:hover::before {
+	@apply block
+}
+
+.footer-top__link::before {
+	@apply content-[''] absolute bottom-[2px] w-full h-[0.5px] bg-light-green hidden;
 }

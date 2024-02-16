@@ -32,50 +32,51 @@ var swiper = new Swiper(".discount-swiper", {
 
 const readMore = document.querySelector('.read-more');
 const readMoreText = document.querySelector('.hide-text');
+const readMoreIcon = document.querySelector('.read-more__icon');
 
 readMore.addEventListener('click', () => {
 	if (readMoreText.classList.contains('hidden')) {
 		readMore.textContent = 'Скрыть текст';
 		readMoreText.classList.remove('hidden');
 		readMoreText.classList.add('block');
+		readMoreIcon.classList.add('rotate-180');
 	} else {
 		readMore.textContent = 'Читать весь текст';
+		readMoreIcon.classList.remove('rotate-180');
 		readMoreText.classList.remove('block');
 		readMoreText.classList.add('hidden');
 	}
 });
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+let acc = document.getElementsByClassName("accordion");
+let i;
 
 // Manually set the first accordion to be active
 acc[0].classList.add("active");
-var firstPanel = acc[0].nextElementSibling;
+let firstPanel = acc[0].nextElementSibling;
 firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
-acc[0].querySelector('img').src = "./src/images/icons/minus.svg"; // Change the path accordingly
+acc[0].querySelector('img').src = "./src/images/icons/minus.svg";
 
-// Add event listeners to the rest of the accordions
 for (i = 0; i < acc.length; i++) {
 	acc[i].addEventListener("click", function () {
 		// Close all other accordions
-		for (var j = 0; j < acc.length; j++) {
+		for (let j = 0; j < acc.length; j++) {
 			if (j !== i) {
 				acc[j].classList.remove("active");
-				var otherPanel = acc[j].nextElementSibling;
+				let otherPanel = acc[j].nextElementSibling;
 				otherPanel.style.maxHeight = null;
 				acc[j].querySelector('img').src = "./src/images/icons/pluse.svg";
 			}
 		}
 
-		// Toggle the clicked accordion
 		this.classList.toggle("active");
-		var panel = this.nextElementSibling;
+		let panel = this.nextElementSibling;
 		if (panel.style.maxHeight) {
 			panel.style.maxHeight = null;
 			this.querySelector('img').src = "./src/images/icons/pluse.svg";
 		} else {
 			panel.style.maxHeight = panel.scrollHeight + "px";
-			this.querySelector('img').src = "./src/images/icons/minus.svg"; // Change the path accordingly
+			this.querySelector('img').src = "./src/images/icons/minus.svg";
 		}
 	});
 }
