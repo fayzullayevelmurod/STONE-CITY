@@ -1,0 +1,15 @@
+{
+	"name": "stone-city",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "npx tailwindcss -i ./src/css/main.css -o ./src/css/output.css --watch"
+	},
+	"author": "Sardor Qobilov",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.4.1"
+	}
+}

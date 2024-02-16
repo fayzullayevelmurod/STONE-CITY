@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	@apply transition-all duration-150
+}
+
+body {
+	@apply font-Monserat font-normal
+}
+
+.container {
+	@apply max-w-[1420px] mx-auto;
+}
+
+.title-text>span {
+	@apply text-green
+}
+
+.title-text {
+	@apply font-Vollkorn text-[56px] font-normal leading-[55px]
+}
+
+.btn {
+	@apply rounded-[5px] bg-light-green px-[30px] py-4 text-sm font-semibold leading-6 text-white;
+}
+
+.btn:hover {
+	@apply bg-black
+}
+
+/* header start */
+.header-top__item:hover svg>path {
+	@apply fill-green;
+}
+
+.header-bottom__link,
+.dropdown-link {
+	@apply relative
+}
+
+.header-bottom__link:hover {
+	@apply text-silver-gray;
+}
+
+.header-bottom__link-first:hover span {
+	@apply text-silver-gray;
+}
+
+.header-bottom__link-first:hover::before,
+.header-bottom__link:hover::before,
+.dropdown-link:hover::before {
+	@apply block;
+}
+
+.header-bottom__link-first::before,
+.header-bottom__link::before,
+.dropdown-link::before {
+	@apply content-[''] absolute bottom-[2px] left-0 w-full h-[0.5px] bg-silver-gray hidden
+}
+
+.header-bottom__link-first:hover .header-bottom__dropdown,
+.header-bottom__dropdown:hover {
+	@apply visible
+}
+
+.header-bottom__dropdown:hover {
+	@apply visible;
+}
+
+.header-bottom__dropdown {
+	visibility: hidden;
+}
+
+.header-bottom__link-first:hover svg>path {
+	@apply fill-silver-gray
+}
+
+.header-bottom__link-first:hover svg {
+	@apply rotate-180
+}
+
+/* hero section */
+.hero-section {
+	background-image: url(../images/hero-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	display: none;
+}
+
+.swiper-button-next,
+swiper-button-prev {
+	width: 27px;
+	height: 21px;
+}
+
+.swiper-button-prev {
+	left: -77px !important;
+}
+
+.swiper-button-next {
+	right: -77px !important;
+}
