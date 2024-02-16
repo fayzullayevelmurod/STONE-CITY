@@ -18,3 +18,14 @@ var swiper = new Swiper(".work-swiper", {
 		prevEl: ".swiper-button-prev2",
 	},
 });
+
+
+var swiper = new Swiper(".discount-swiper", {
+	slidesPerView: 3,
+	spaceBetween: 20,
+	loop: true,
+	navigation: {
+		nextEl: ".swiper-button-next3",
+		prevEl: ".swiper-button-prev3",
+	},
+});

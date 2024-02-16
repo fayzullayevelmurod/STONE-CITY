@@ -139,7 +139,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .btn {
-	@apply rounded-[5px] bg-light-green px-[30px] py-4 text-sm font-semibold leading-6 text-white;
+	@apply rounded-[5px] bg-light-green px-[30px] py-4 text-sm font-semibold leading-6 text-white uppercase;
 }
 
 .btn:hover {
@@ -221,6 +221,10 @@ input[type="checkbox"]:checked:after {
 	@apply hidden
 }
 
+.swiper-button:hover svg>path {
+	stroke: #62CF73;
+}
+
 .swiper-button-next,
 swiper-button-prev {
 	@apply w-[27px] h-[27px]
@@ -289,4 +293,10 @@ swiper-button-prev {
 
 .service-boxes {
 	grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+}
+
+/* catalog */
+.catalog-section {
+	background-image: url(../images/hero-bg.png);
+	@apply bg-no-repeat bg-cover pt-[95px] pb-[207px];
 }
