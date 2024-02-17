@@ -51,6 +51,24 @@ var swiper = new Swiper(".discount-swiper", {
 		nextEl: ".swiper-button-next3",
 		prevEl: ".swiper-button-prev3",
 	},
+	breakpoints: {
+		1150: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		720: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+		542: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+		0: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		},
+	}
 });
 
 // read more

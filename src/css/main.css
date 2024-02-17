@@ -408,6 +408,10 @@ swiper-button-prev {
 		@apply text-[30px] leading-[40px]
 	}
 
+	.btn {
+		@apply py-[10px] px-[20px] text-sm;
+	}
+
 	.swiper-button svg,
 	.swiper-button svg {
 		@apply w-[24px]
