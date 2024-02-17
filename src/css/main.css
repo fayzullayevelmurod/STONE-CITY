@@ -377,3 +377,34 @@ swiper-button-prev {
 	border-bottom-left-radius: 0;
 	border-bottom: 0;
 }
+
+.grid-box {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+}
+
+/* media query */
+@media screen and (max-width: 1440px) {
+	.container {
+		@apply max-w-full pl-[20px] pr-[20px];
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.title-text__two {
+		@apply text-[46px] leading-[56px]
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.title-text__two {
+		font-size: 36px;
+		line-height: 46px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.title-text__two {
+		@apply text-[30px] leading-[40px]
+	}
+}

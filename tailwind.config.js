@@ -50,6 +50,11 @@ module.exports = {
 				"DEFAULT": '5px',
 				"1xl": "15px",
 				"4xl": "25px",
+			},
+			screens: {
+				"1xl": "1440px",
+				"1xs": "1390px",
+				"xsm": "480px"
 			}
 		},
 	},
