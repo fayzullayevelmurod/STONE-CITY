@@ -110,33 +110,58 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// accordion
 	try {
+		// let acc = document.querySelectorAll(".accordion");
+		// let i;
+
+		// acc[0].classList.add("active");
+		// let firstPanel = acc[0].nextElementSibling;
+		// firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+		// acc[0].querySelector('img').src = "./src/images/icons/minus.svg";
+
+		// for (i = 0; i < acc.length; i++) {
+		// 	acc[i].addEventListener("click", function () {
+		// 		for (let j = 0; j < acc.length; j++) {
+		// 			if (j !== i) {
+		// 				acc[j].classList.remove("active");
+		// 				let otherPanel = acc[j].nextElementSibling;
+		// 				otherPanel.style.maxHeight = null;
+		// 				acc[j].querySelector('img').src = "./src/images/icons/pluse.svg";
+		// 			}
+		// 		}
+
+		// 		this.classList.toggle("active");
+		// 		let panel = this.nextElementSibling;
+		// 		if (panel.style.maxHeight) {
+		// 			panel.style.maxHeight = null;
+		// 			this.querySelector('img').src = "./src/images/icons/pluse.svg";
+		// 		} else {
+		// 			panel.style.maxHeight = panel.scrollHeight + "px";
+		// 			this.querySelector('img').src = "./src/images/icons/minus.svg";
+		// 		}
+		// 	});
+
 		let acc = document.querySelectorAll(".accordion");
-		let i;
+		for (let i = 0; i < acc.length; i++) {
+			let panel = acc[i].nextElementSibling;
+			let img = acc[i].querySelector('img');
 
-		acc[0].classList.add("active");
-		let firstPanel = acc[0].nextElementSibling;
-		firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
-		acc[0].querySelector('img').src = "./src/images/icons/minus.svg";
-
-		for (i = 0; i < acc.length; i++) {
 			acc[i].addEventListener("click", function () {
 				for (let j = 0; j < acc.length; j++) {
 					if (j !== i) {
 						acc[j].classList.remove("active");
-						let otherPanel = acc[j].nextElementSibling;
-						otherPanel.style.maxHeight = null;
+						acc[j].nextElementSibling.style.maxHeight = null;
 						acc[j].querySelector('img').src = "./src/images/icons/pluse.svg";
 					}
 				}
 
 				this.classList.toggle("active");
-				let panel = this.nextElementSibling;
+
 				if (panel.style.maxHeight) {
 					panel.style.maxHeight = null;
-					this.querySelector('img').src = "./src/images/icons/pluse.svg";
+					img.src = "./src/images/icons/pluse.svg";
 				} else {
 					panel.style.maxHeight = panel.scrollHeight + "px";
-					this.querySelector('img').src = "./src/images/icons/minus.svg";
+					img.src = "./src/images/icons/minus.svg";
 				}
 			});
 		}
