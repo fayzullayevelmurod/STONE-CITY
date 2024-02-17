@@ -298,7 +298,7 @@ swiper-button-prev {
 
 .form-section {
 	background-image: url(../images/form-bg.png);
-	@apply bg-cover bg-no-repeat pt-[87px] pb-[99px];
+	@apply bg-cover bg-no-repeat md:pt-[87px] md:pb-[99px] py-[50px];
 }
 
 .service-boxes {
