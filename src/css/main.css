@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* core style */
 * {
 	@apply transition-all duration-150
 }
@@ -145,6 +146,14 @@ input[type="checkbox"]:checked:after {
 }
 
 /* header start */
+.header-top__item:hover span {
+	@apply text-green-100
+}
+
+.header-top__item:hover svg {
+	@apply rotate-180
+}
+
 .header-top__item:hover svg>path {
 	@apply fill-green-100;
 }
@@ -162,10 +171,20 @@ input[type="checkbox"]:checked:after {
 	@apply text-silver-gray;
 }
 
+/* dropdow start*/
+.dropdown:hover .dropdown-menu {
+	@apply block
+}
+
+/* dropdown end */
 .header-bottom__link-first:hover::before,
 .header-bottom__link:hover::before,
 .dropdown-link:hover::before {
 	@apply block;
+}
+
+.header-bottom__link-first::before {
+	@apply w-[97px];
 }
 
 .header-bottom__link-first::before,
@@ -183,9 +202,9 @@ input[type="checkbox"]:checked:after {
 	@apply visible;
 }
 
-.header-bottom__dropdown {
+/* .header-bottom__dropdown {
 	@apply invisible
-}
+} */
 
 .header-bottom__link-first:hover svg>path {
 	@apply fill-silver-gray

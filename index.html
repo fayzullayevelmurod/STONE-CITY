@@ -17,21 +17,45 @@
 
 <body>
 
-	<div class="wrapper">
+	<div class="wrapper overflow-hidden">
 
 		<!-- header -->
 		<header class="header">
 			<div class="border border-light-400 border-solid py-3">
 				<div class="container flex items-center justify-between">
 					<ul class="flex items-center space-x-10">
-						<li class="flex items-center space-x-[7px] header-top__item">
-							<a class="hover:text-green-100" href="#!">О компании</a>
-							<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M0.84338 0.636512C0.795645 0.591402 0.739492 0.556138 0.678127 0.53273C0.616763 0.509322 0.551389 0.49823 0.485738 0.500087C0.420087 0.501945 0.355445 0.516715 0.295502 0.543554C0.235559 0.570393 0.181489 0.608776 0.13638 0.656512C0.0912711 0.704247 0.056006 0.760401 0.0325982 0.821765C0.00919049 0.883129 -0.00190152 0.948503 -4.43467e-05 1.01415C0.00181283 1.0798 0.0165827 1.14445 0.0434221 1.20439C0.0702615 1.26433 0.108645 1.3184 0.15638 1.36351L4.65638 5.61351C4.74921 5.70128 4.87212 5.75018 4.99988 5.75018C5.12764 5.75018 5.25055 5.70128 5.34338 5.61351L9.84388 1.36351C9.89266 1.3187 9.93205 1.26464 9.95976 1.20448C9.98748 1.14432 10.003 1.07925 10.0053 1.01305C10.0077 0.946851 9.99684 0.880847 9.97346 0.818868C9.95009 0.75689 9.91464 0.700173 9.86916 0.652013C9.82368 0.603853 9.76909 0.565208 9.70855 0.538325C9.64801 0.511442 9.58273 0.496856 9.51651 0.495414C9.45029 0.493971 9.38444 0.505702 9.32279 0.529924C9.26114 0.554146 9.20491 0.590376 9.15738 0.636511L4.99988 4.56251L0.84338 0.636512Z"
-									fill="#242424" />
-							</svg>
-						</li>
+
+						<div class="dropdown relative header-top__item">
+							<button class="flex items-center relative z-20 space-x-[7px]">
+								<span>О компании</span>
+								<svg class="fill-current h-4 w-4 relative z-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+									<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+								</svg>
+							</button>
+							<div
+								class="dropdown-menu absolute hidden left-[-30px] font-semibold text-[15px] bg-white  z-10 pt-[42px] top-0">
+								<ul class="bg-green-300 px-[30px] py-[20px] space-y-3 text-white">
+									<li>
+										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
+									</li>
+									<li>
+										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
+									</li>
+									<li>
+										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
+									</li>
+									<li>
+										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
+									</li>
+									<li>
+										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
+									</li>
+									<li>
+										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 						<li>
 							<a class="hover:text-green-100" href="#!">Как заказать</a>
 						</li>
@@ -83,56 +107,56 @@
 						консультация</a>
 				</div>
 			</div>
-
-			<div class="bg-green-100 py-2">
+			<div class="bg-green-100 py-2 parent-box">
 				<div class="container flex items-center justify-between">
 					<ul class="flex space-x-[50px] py-[10px] text-base font-semibold leading-6 text-white">
-						<li class="relative z-10 header-bottom__link-first">
-							<a class="relative" href="#!">
-								<div class="flex items-center space-x-[11px] hover:text-silver-gray">
+						<li class="inline-block relative z-[5] ">
+							<div class="dropdown inline-block relative header-bottom__link-first">
+								<button class="flex items-center space-x-[11px]">
 									<span>Памятники</span>
-									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.84338 0.636512C0.795645 0.591402 0.739492 0.556138 0.678127 0.53273C0.616763 0.509322 0.551389 0.49823 0.485738 0.500087C0.420087 0.501945 0.355445 0.516715 0.295502 0.543554C0.235559 0.570393 0.181489 0.608776 0.13638 0.656512C0.0912711 0.704247 0.056006 0.760401 0.0325982 0.821765C0.00919049 0.883129 -0.00190152 0.948503 -4.43467e-05 1.01415C0.00181283 1.0798 0.0165827 1.14445 0.0434221 1.20439C0.0702615 1.26433 0.108645 1.3184 0.15638 1.36351L4.65638 5.61351C4.74921 5.70128 4.87212 5.75018 4.99988 5.75018C5.12764 5.75018 5.25055 5.70128 5.34338 5.61351L9.84388 1.36351C9.89266 1.3187 9.93205 1.26464 9.95976 1.20448C9.98748 1.14432 10.003 1.07925 10.0053 1.01305C10.0077 0.946851 9.99684 0.880847 9.97346 0.818868C9.95009 0.75689 9.91464 0.700173 9.86916 0.652013C9.82368 0.603853 9.76909 0.565208 9.70855 0.538325C9.64801 0.511442 9.58273 0.496856 9.51651 0.495414C9.45029 0.493971 9.38444 0.505702 9.32279 0.529924C9.26114 0.554146 9.20491 0.590376 9.15738 0.636511L4.99988 4.56251L0.84338 0.636512Z"
-											fill="#fff" />
+									<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
 									</svg>
+								</button>
+								<div
+									class="dropdown-menu absolute hidden left-[-30px] font-semibold text-[15px] bg-green-100  z-[-10] pt-[42px] top-0">
+									<ul class="bg-green-300 px-[30px] py-[20px] space-y-3">
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
+										</li>
+									</ul>
 								</div>
-							</a>
-							<ul
-								class="absolute header-bottom__dropdown z-[-10] top-[6px] pt-[50px] left-[-30px] max-w-[193px] bg-green-300 pb-5 px-[30px] space-y-3 font-semibold text-[15px]">
-								<li>
-									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
-								</li>
-								<li>
-									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
-								</li>
-								<li>
-									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
-								</li>
-								<li>
-									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
-								</li>
-								<li>
-									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
-								</li>
-								<li>
-									<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
-								</li>
-							</ul>
+								<!-- bu ul  parent-box ni ustiga chiqib qolayapti parent box esa uni ortiga o'tib qolayapti z index ishlamayapti -->
+							</div>
 						</li>
-						<li>
+						<li class="relative z-10">
 							<a class="header-bottom__link" href="#!">Услуги</a>
 						</li>
-						<li>
+						<li class="relative z-10">
 							<a class="header-bottom__link" href="#!">Виды камня</a>
 						</li>
-						<li>
+						<li class="relative z-10">
 							<a class="header-bottom__link" href="#!">Аксессуары</a>
 						</li>
-						<li>
+						<li class="relative z-10">
 							<a class="header-bottom__link" href="#!">Скидки</a>
 						</li>
-						<li>
+						<li class="relative z-10">
 							<a class="header-bottom__link" href="#!">Наши работы</a>
 						</li>
 						<li>
@@ -150,6 +174,7 @@
 
 		<!-- main -->
 		<main class="main">
+			<!-- hero section -->
 			<section class="hero-section pt-[105px] pb-[113px]">
 				<div class="container relative">
 					<div class="swiper mySwiper">
@@ -194,6 +219,7 @@
 
 			</section>
 
+			<!-- making-monuments -->
 			<section class="making-monuments mt-[100px]">
 				<div class="container">
 					<h3 class="title-text max-w-[692px] mb-[45px]">Изготовление <span>памятников</span> на могилу</h3>
@@ -411,6 +437,7 @@
 				</div>
 			</section>
 
+			<!-- our works -->
 			<section class="our-works">
 				<div class="container">
 					<div class="grid grid-cols-2 gap-[20px]">
@@ -532,6 +559,7 @@
 				</div>
 			</section>
 
+			<!-- form-sectioin -->
 			<section class="form-section">
 				<div class="container flex items-start justify-between">
 					<div class="max-w-[413px]">
@@ -560,6 +588,7 @@
 				</div>
 			</section>
 
+			<!-- slider section -->
 			<div class="container my-[100px]">
 				<div class="flex justify-between items-center mb-[45px]">
 					<h3 class="title-text__two text-black-400">Скидки</h3>
@@ -679,6 +708,7 @@
 				</div>
 			</div>
 
+			<!-- catalog section -->
 			<section class="catalog-section">
 				<div class="container">
 					<h3 class="title-text__two text-black-400">Каталог</h3>
@@ -858,6 +888,7 @@
 				</div>
 			</section>
 
+			<!-- form section -->
 			<section class="form-section">
 				<div class="container flex items-start justify-between">
 					<div class="max-w-[555px]">
@@ -888,6 +919,7 @@
 				</div>
 			</section>
 
+			<!-- slider section -->
 			<section class="border-b border-b-light-400">
 				<div class="container mt-[100px] pb-[105px]">
 					<div class="flex justify-between items-center mb-[45px]">
@@ -951,6 +983,7 @@
 				</div>
 			</section>
 
+			<!-- reviews section -->
 			<section class="mt-[100px] mb-[110px]">
 				<div class="container">
 					<h3 class="title-text__two text-black-400 mb-[40px]">Отзывы</h3>
@@ -1066,6 +1099,7 @@
 				</div>
 			</section>
 
+			<!-- answers section -->
 			<section class="answers-sectioin pb-[119px] pt-[98px]">
 				<div class="container flex justify-between space-x-[79px]">
 					<div class="max-w-[940px]">
@@ -1291,6 +1325,7 @@
 				</div>
 			</section>
 
+			<!-- map section -->
 			<section class="relative">
 				<!-- <iframe 
 					src="https://yandex.com/map-widget/v1/?ll=60.553960%2C56.807688&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DIgoNQTdyQhUTO2NC&tab=services&z=17.08"
@@ -1499,7 +1534,6 @@
 		</div>
 
 	</div>
-
 
 	<!-- swiper js file -->
 	<script src="./src/libs/swiper-bundle.min.js"></script>
