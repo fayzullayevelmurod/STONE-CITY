@@ -288,12 +288,12 @@ swiper-button-prev {
 
 .services-box {
 	background-image: url(../images/services-bg.png);
-	@apply bg-cover bg-no-repeat pr-[170px] py-[43px] pl-[52px];
+	@apply bg-cover bg-no-repeat;
 }
 
 .stone-box {
 	background-image: url(../images/stone-bg.png);
-	@apply bg-cover bg-no-repeat pr-[117px] pt-[54px] pb-[67px] pl-[55px] rounded-[25px];
+	@apply bg-cover bg-no-repeat 1xs:pr-[117px] px-[25px] lg:pt-[54px] lg:pb-[67px] py-[30px] 1xs:pl-[55px];
 }
 
 .form-section {
@@ -406,5 +406,10 @@ swiper-button-prev {
 @media screen and (max-width: 480px) {
 	.title-text__two {
 		@apply text-[30px] leading-[40px]
+	}
+
+	.swiper-button svg,
+	.swiper-button svg {
+		@apply w-[24px]
 	}
 }

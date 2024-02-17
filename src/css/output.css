@@ -820,6 +820,11 @@ video {
   margin-bottom: 50px;
 }
 
+.my-\[\] {
+  margin-top: ;
+  margin-bottom: ;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1049,6 +1054,10 @@ video {
 
 .h-\[36px\] {
   height: 36px;
+}
+
+.h-\[440px\] {
+  height: 440px;
 }
 
 .h-\[56px\] {
@@ -2171,6 +2180,10 @@ video {
   border-radius: 25px;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -2629,11 +2642,6 @@ video {
   padding-bottom: 25px;
 }
 
-.py-\[43px\] {
-  padding-top: 43px;
-  padding-bottom: 43px;
-}
-
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -2675,16 +2683,8 @@ video {
   padding-left: 22px;
 }
 
-.pl-\[54px\] {
-  padding-left: 54px;
-}
-
 .pr-\[14px\] {
   padding-right: 14px;
-}
-
-.pr-\[51px\] {
-  padding-right: 51px;
 }
 
 .pt-\[22px\] {
@@ -3749,21 +3749,30 @@ swiper-button-prev {
   background-image: url(../images/services-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 43px;
-  padding-bottom: 43px;
-  padding-right: 170px;
-  padding-left: 52px;
 }
 
 .stone-box {
   background-image: url(../images/stone-bg.png);
-  border-radius: 25px;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-right: 117px;
-  padding-top: 54px;
-  padding-bottom: 67px;
-  padding-left: 55px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+  .stone-box {
+    padding-top: 54px;
+    padding-bottom: 67px;
+  }
+}
+
+@media (min-width: 1390px) {
+  .stone-box {
+    padding-right: 117px;
+    padding-left: 55px;
+  }
 }
 
 .form-section {
@@ -3953,7 +3962,12 @@ swiper-button-prev {
 @media screen and (max-width: 480px) {
   .title-text__two {
     font-size: 30px;
-    line-height: 40px
+    line-height: 40px;
+  }
+
+  .swiper-button svg,
+	.swiper-button svg {
+    width: 24px;
   }
 }
 
@@ -4120,14 +4134,28 @@ swiper-button-prev {
 }
 
 @media (min-width: 480px) {
+  .xsm\:h-\[300px\] {
+    height: 300px;
+  }
+
   .xsm\:space-x-\[23px\] > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(23px * var(--tw-space-x-reverse));
     margin-left: calc(23px * calc(1 - var(--tw-space-x-reverse)));
   }
+
+  .xsm\:space-x-\[67px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(67px * var(--tw-space-x-reverse));
+    margin-left: calc(67px * calc(1 - var(--tw-space-x-reverse)));
+  }
 }
 
 @media (min-width: 640px) {
+  .sm\:h-\[440px\] {
+    height: 440px;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -4141,6 +4169,10 @@ swiper-button-prev {
 
   .md\:mb-\[45px\] {
     margin-bottom: 45px;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px;
   }
 
   .md\:w-auto {
@@ -4185,12 +4217,20 @@ swiper-button-prev {
     width: 700px;
   }
 
+  .\31xs\:w-auto {
+    width: auto;
+  }
+
   .\31xs\:flex-nowrap {
     flex-wrap: nowrap;
   }
 
   .\31xs\:rounded-3xl {
     border-radius: 1.5rem;
+  }
+
+  .\31xs\:rounded-4xl {
+    border-radius: 25px;
   }
 }
 
@@ -4203,6 +4243,22 @@ swiper-button-prev {
   .\31xl\:py-\[43px\] {
     padding-top: 43px;
     padding-bottom: 43px;
+  }
+
+  .\31xl\:pl-\[52px\] {
+    padding-left: 52px;
+  }
+
+  .\31xl\:pl-\[54px\] {
+    padding-left: 54px;
+  }
+
+  .\31xl\:pr-\[170px\] {
+    padding-right: 170px;
+  }
+
+  .\31xl\:pr-\[51px\] {
+    padding-right: 51px;
   }
 }
 

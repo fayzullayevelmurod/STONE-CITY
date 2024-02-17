@@ -18,6 +18,28 @@ var swiper = new Swiper(".work-swiper", {
 		nextEl: ".swiper-button-next2",
 		prevEl: ".swiper-button-prev2",
 	},
+	breakpoints: {
+		1390: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+		1200: {
+			slidesPerView: 4,
+			spaceBetween: 10,
+		},
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 10,
+		},
+		480: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+		0: {
+			slidesPerView: 1,
+			spaceBetween: 10,
+		}
+	}
 });
 
 
