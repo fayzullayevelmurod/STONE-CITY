@@ -322,7 +322,7 @@ swiper-button-prev {
 }
 
 .accordion.active+.panel {
-	@apply px-10 py-[30px]
+	@apply xsm:px-10 px-[20px] xsm:py-[30px] py-[20px]
 }
 
 .panel {
