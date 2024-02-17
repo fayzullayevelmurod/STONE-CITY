@@ -72,54 +72,62 @@ var swiper = new Swiper(".discount-swiper", {
 });
 
 // read more
-const readMore = document.querySelector('.read-more');
-const readMoreText = document.querySelector('.hide-text');
-const readMoreIcon = document.querySelector('.read-more__icon');
+try {
+	const readMore = document.querySelector('.read-more');
+	const readMoreText = document.querySelector('.hide-text');
+	const readMoreIcon = document.querySelector('.read-more__icon');
 
-readMore.addEventListener('click', () => {
-	if (readMoreText.classList.contains('hidden')) {
-		readMore.textContent = 'Скрыть текст';
-		readMoreText.classList.remove('hidden');
-		readMoreText.classList.add('block');
-		readMoreIcon.classList.add('rotate-180');
-	} else {
-		readMore.textContent = 'Читать весь текст';
-		readMoreIcon.classList.remove('rotate-180');
-		readMoreText.classList.remove('block');
-		readMoreText.classList.add('hidden');
-	}
-});
-
-// accordion
-let acc = document.querySelectorAll(".accordion");
-let i;
-
-acc[0].classList.add("active");
-let firstPanel = acc[0].nextElementSibling;
-firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
-acc[0].querySelector('img').src = "./src/images/icons/minus.svg";
-
-for (i = 0; i < acc.length; i++) {
-	acc[i].addEventListener("click", function () {
-		for (let j = 0; j < acc.length; j++) {
-			if (j !== i) {
-				acc[j].classList.remove("active");
-				let otherPanel = acc[j].nextElementSibling;
-				otherPanel.style.maxHeight = null;
-				acc[j].querySelector('img').src = "./src/images/icons/pluse.svg";
-			}
-		}
-
-		this.classList.toggle("active");
-		let panel = this.nextElementSibling;
-		if (panel.style.maxHeight) {
-			panel.style.maxHeight = null;
-			this.querySelector('img').src = "./src/images/icons/pluse.svg";
+	readMore.addEventListener('click', () => {
+		if (readMoreText.classList.contains('hidden')) {
+			readMore.textContent = 'Скрыть текст';
+			readMoreText.classList.remove('hidden');
+			readMoreText.classList.add('block');
+			readMoreIcon.classList.add('rotate-180');
 		} else {
-			panel.style.maxHeight = panel.scrollHeight + "px";
-			this.querySelector('img').src = "./src/images/icons/minus.svg";
+			readMore.textContent = 'Читать весь текст';
+			readMoreIcon.classList.remove('rotate-180');
+			readMoreText.classList.remove('block');
+			readMoreText.classList.add('hidden');
 		}
 	});
+} catch (error) {
+	throw error
+}
+
+// accordion
+try {
+	let acc = document.querySelectorAll(".accordion");
+	let i;
+
+	acc[0].classList.add("active");
+	let firstPanel = acc[0].nextElementSibling;
+	firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+	acc[0].querySelector('img').src = "./src/images/icons/minus.svg";
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function () {
+			for (let j = 0; j < acc.length; j++) {
+				if (j !== i) {
+					acc[j].classList.remove("active");
+					let otherPanel = acc[j].nextElementSibling;
+					otherPanel.style.maxHeight = null;
+					acc[j].querySelector('img').src = "./src/images/icons/pluse.svg";
+				}
+			}
+
+			this.classList.toggle("active");
+			let panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+				this.querySelector('img').src = "./src/images/icons/pluse.svg";
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+				this.querySelector('img').src = "./src/images/icons/minus.svg";
+			}
+		});
+	}
+} catch (error) {
+	throw error
 }
 
 // Modal
