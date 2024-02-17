@@ -184,7 +184,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .header-bottom__link-first::before {
-	@apply w-[97px];
+	@apply w-[97px] !important;
 }
 
 .header-bottom__link-first::before,

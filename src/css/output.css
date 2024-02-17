@@ -2630,8 +2630,8 @@ video {
   padding-bottom: 119px;
 }
 
-.pb-\[130px\] {
-  padding-bottom: 130px;
+.pb-\[30px\] {
+  padding-bottom: 30px;
 }
 
 .pb-\[38px\] {
@@ -2700,10 +2700,6 @@ video {
 
 .pt-\[98px\] {
   padding-top: 98px;
-}
-
-.pb-\[30px\] {
-  padding-bottom: 30px;
 }
 
 .text-left {
@@ -3607,7 +3603,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .header-bottom__link-first::before {
-  width: 97px;
+  width: 97px !important;
 }
 
 .header-bottom__link-first::before,
