@@ -360,3 +360,18 @@ swiper-button-prev {
 .footer-top__link::before {
 	@apply content-[''] absolute bottom-[2px] w-full h-[0.5px] bg-green-100 hidden;
 }
+
+/* selec */
+.sellect-dropdown::before {
+	@apply content-[url("../images/icons/arrow-down.svg")] z-50 absolute right-[20px] top-[35%] translate-y-[-50%] w-[12px] h-[12px];
+}
+
+.sellect-dropdown.active::before {
+	@apply rotate-180 top-[62%]
+}
+
+.sellect-dropdown.active input {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom: 0;
+}
