@@ -20,55 +20,69 @@
 	<div class="wrapper overflow-hidden">
 
 		<!-- header -->
-		<!-- <header class="header">
-			<div class="border border-light-400 border-solid py-3">
-				<div class="container flex items-center justify-between">
-					<ul class="flex items-center space-x-10">
+		<header class="header">
 
-						<div class="dropdown relative header-top__item">
-							<button class="flex items-center relative z-20 space-x-[7px]">
-								<span>О компании</span>
-								<svg class="fill-current h-4 w-4 relative z-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-									<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-								</svg>
+			<div class="border-b border-b-light-400 border-solid py-3">
+				<div class="container flex items-center justify-between">
+					<button class="lg:hidden header-top__btn">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+						</svg>
+					</button>
+
+					<div class="relative">
+						<ul
+							class="header-menu__top lg:translate-x-0 translate-x-[-100%] duration-300 lg:flex lg:text-black-400 text-white lg:z-auto z-50 items-center lg:gap-10 lg:flex lg:bg-transparent lg:relative lg:space-y-0 space-y-[10px] fixed bg-black-400 lg:w-auto w-[60%] top-0 left-0 h-full lg:pl-0 pl-[20px] lg:pt-0 pt-[20px]">
+							<button class="close-menu absolute top-[20px] right-[20px]">
+								<img src="./src/images/icons/close.svg" alt="">
 							</button>
-							<div
-								class="dropdown-menu absolute hidden left-[-30px] font-semibold text-[15px] bg-white  z-10 pt-[42px] top-0">
-								<ul class="bg-green-300 px-[30px] py-[20px] space-y-3 text-white">
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
-									</li>
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
-									</li>
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
-									</li>
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
-									</li>
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
-									</li>
-									<li>
-										<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
-									</li>
-								</ul>
+							<div class="dropdown w-fit relative header-top__item">
+								<button class="flex items-center relative z-20 space-x-[7px]">
+									<span>О компании</span>
+									<svg class="fill-current h-4 w-4 relative z-20" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 20 20">
+										<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+									</svg>
+								</button>
+								<div
+									class="dropdown-menu bg-black-400 absolute hidden left-[-30px] font-semibold text-[15px] lg:bg-white  z-10 pt-[42px] top-0">
+									<ul class="bg-green-300 px-[30px] py-[20px] space-y-3 text-white">
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</div>
-						<li>
-							<a class="hover:text-green-100" href="#!">Как заказать</a>
-						</li>
-						<li>
-							<a class="hover:text-green-100" href="#!">Доставка</a>
-						</li>
-						<li>
-							<a class="hover:text-green-100" href="#!">Монтаж</a>
-						</li>
-						<li>
-							<a class="hover:text-green-100" href="#!">Отзывы</a>
-						</li>
-					</ul>
+							<li class="w-fit">
+								<a class="hover:text-green-100" href="#!">Как заказать</a>
+							</li>
+							<li class="w-fit">
+								<a class="hover:text-green-100" href="#!">Доставка</a>
+							</li>
+							<li class="w-fit">
+								<a class="hover:text-green-100" href="#!">Монтаж</a>
+							</li>
+							<li class="w-fit">
+								<a class="hover:text-green-100" href="#!">Отзывы</a>
+							</li>
+						</ul>
+					</div>
 
 					<div class="flex items-center space-x-[17px]">
 						<a href="#!">
@@ -81,9 +95,9 @@
 				</div>
 			</div>
 
-			<div class="container flex items-center justify-between py-5">
+			<div class="container flex gap-[20px] flex-wrap items-center justify-between py-5">
 				<div>
-					<h3 class="font-Vollkorn text-4xl leading-9 font-normal text-green-100">КАМЕННЫЙ ГОРОД</h3>
+					<h3 class="font-Vollkorn md:text-4xl text-2xl leading-9 font-normal text-green-100">КАМЕННЫЙ ГОРОД</h3>
 					<p class="max-w-[241px] font-medium text-sm leading-5.5">Изделия из натурального камня Памятники от
 						производителя</p>
 				</div>
@@ -95,8 +109,8 @@
 						href="#!">kamen-gorod96@ya.ru</a>
 				</div>
 
-				<div class="flex items-center space-x-[30px]">
-					<div class="text-end">
+				<div class="flex flex-wrap items-center gap-[30px]">
+					<div class="lg:text-end">
 						<a class="font-semibold text-black-400 text-1xl space-y-1 leading-6 block hover:text-green-100" href="#!">8
 							(343) 200-05-44</a>
 						<a class="call-modal__open font-medium text-green-100 border-b border-b-green-100 leading-6 text-base hover:text-black-400 hover:border-b-black-400"
@@ -108,8 +122,8 @@
 				</div>
 			</div>
 			<div class="bg-green-100 py-2 parent-box">
-				<div class="container flex items-center justify-between">
-					<ul class="flex space-x-[50px] py-[10px] text-base font-semibold leading-6 text-white">
+				<div class="container flex  lg:items-center items-start h-full justify-between lg:bg-transparent lg:relative">
+					<ul class="lg:flex lg:space-x-[50px] py-[10px] text-base font-semibold leading-6 text-white">
 						<li class="inline-block relative z-[5] ">
 							<div class="dropdown inline-block relative header-bottom__link-first">
 								<button class="flex items-center space-x-[11px]">
@@ -143,19 +157,19 @@
 								</div>
 							</div>
 						</li>
-						<li class="relative z-10">
+						<li class="relative lg:z-10">
 							<a class="header-bottom__link" href="#!">Услуги</a>
 						</li>
-						<li class="relative z-10">
+						<li class="relative lg:z-10">
 							<a class="header-bottom__link" href="#!">Виды камня</a>
 						</li>
-						<li class="relative z-10">
+						<li class="relative lg:z-10">
 							<a class="header-bottom__link" href="#!">Аксессуары</a>
 						</li>
-						<li class="relative z-10">
+						<li class="relative lg:z-10">
 							<a class="header-bottom__link" href="#!">Скидки</a>
 						</li>
-						<li class="relative z-10">
+						<li class="relative lg:z-10">
 							<a class="header-bottom__link" href="#!">Наши работы</a>
 						</li>
 						<li>
@@ -164,17 +178,18 @@
 					</ul>
 
 					<button id="search-modal-open">
-						<img class="cursor-pointer w-[20px] h-[20px]" src="./src/images/icons/search-icon.svg" alt="search-icon">
+						<img class="cursor-pointer mt-[10px] w-[20px] h-[20px] " src="./src/images/icons/search-icon.svg"
+							alt="search-icon">
 					</button>
 				</div>
 			</div>
 
-		</header> -->
+		</header>
 
 		<!-- main -->
 		<main class="main">
 			<!-- hero section -->
-			<section class="hero-section sm:pt-[60px] pb-[30px]">
+			<section class="hero-section sm:pt-[60px] pb-[30px] relative z-[-1]">
 				<div class="container relative">
 					<div class="swiper mySwiper">
 						<div class="swiper-wrapper">
@@ -183,7 +198,8 @@
 									<div class="pt-[40px]">
 										<h3 class="title-text__two text-black-400 uppercase max-w-[442px]"><span>изготовление</span>
 											памятников</h3>
-										<p class="text-base font-normal mt-[14px] md:mb-[60px] mb-[30px] leading-6 text-gray-300">Из мрамора, гранита
+										<p class="text-base font-normal mt-[14px] md:mb-[60px] mb-[30px] leading-6 text-gray-300">Из
+											мрамора, гранита
 											и
 											змеевика по
 											доступным ценам</p>
@@ -202,7 +218,8 @@
 									<div class="pt-[40px]">
 										<h3 class="title-text__two text-black-400 uppercase max-w-[442px]"><span>изготовление</span>
 											памятников</h3>
-										<p class="text-base font-normal mt-[14px] md:mb-[60px] mb-[30px] leading-6 text-gray-300">Из мрамора, гранита
+										<p class="text-base font-normal mt-[14px] md:mb-[60px] mb-[30px] leading-6 text-gray-300">Из
+											мрамора, гранита
 											и
 											змеевика по
 											доступным ценам</p>
@@ -211,7 +228,7 @@
 											<img src="./src/images/icons/arrow-icon.svg" alt="arrow-icon">
 										</a>
 									</div>
-							
+
 									<img class="1xs:w-auto lg:w-[60%]" src="./src/images/hero-slider.png" alt="">
 								</div>
 							</div>
@@ -221,7 +238,8 @@
 									<div class="pt-[40px]">
 										<h3 class="title-text__two text-black-400 uppercase max-w-[442px]"><span>изготовление</span>
 											памятников</h3>
-										<p class="text-base font-normal mt-[14px] md:mb-[60px] mb-[30px] leading-6 text-gray-300">Из мрамора, гранита
+										<p class="text-base font-normal mt-[14px] md:mb-[60px] mb-[30px] leading-6 text-gray-300">Из
+											мрамора, гранита
 											и
 											змеевика по
 											доступным ценам</p>
@@ -230,7 +248,7 @@
 											<img src="./src/images/icons/arrow-icon.svg" alt="arrow-icon">
 										</a>
 									</div>
-							
+
 									<img class="1xs:w-auto lg:w-[60%]" src="./src/images/hero-slider.png" alt="">
 								</div>
 							</div>
@@ -1697,13 +1715,13 @@
 	<!-- modal -->
 	<div class="search-modal modal hidden w-full h-full bg-black-100 fixed top-0 left-0 bg-opacity-70 z-[9999]">
 		<div class="relative top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] max-w-[600px]">
-			<div class="flex mb-[14px] items-center justify-between">
+			<div class="flex mb-[14px] items-center justify-between sm:mx-auto mx-[20px]">
 				<h4 class="font-semibold text-[20px] leading-6 text-white">Поиск по сайту</h4>
 				<button class="search-modal__close">
 					<img src="./src/images/icons/close.svg" alt="">
 				</button>
 			</div>
-			<div class="relative">
+			<div class="relative sm:mx-auto mx-[20px]">
 				<input
 					class="w-full bg-light-200 border border-light-900 py-[17px] pl-[22px] rounded leading-5.5 text-sm text-gray-300 placeholder:text-gray-300"
 					type="text" placeholder="Название нужного товара">
@@ -1720,29 +1738,32 @@
 
 	<div class="call-modal modal hidden	w-full h-full bg-black-100 fixed top-0 left-0 bg-opacity-70 z-[9999]">
 		<div class="max-w-[460px] relative top-[50%] left-[50%] pt-[22px] translate-y-[-50%] translate-x-[-50%]">
-			<div class="text-end ml-auto absolute top-0 right-[-17px]">
+			<div class="text-end ml-auto absolute top-0 sm:right-[-17px] right-[10px]">
 				<button class="call-modal__close">
 					<img src="./src/images/icons/close.svg" alt="">
 				</button>
 			</div>
 
-			<div class="bg-white rounded-1xl px-[60px] pt-[40px] pb-[50px] mt-[3px]">
-				<h3 class="font-normal text-[40px] leading-[46px] font-Vollkorn text-center text-black-400 mb-[6px]">Заказать
+			<div
+				class="bg-white sm:mx-auto mx-[20px] xsm:rounded-1xl rounded-md sm:px-[60px] p-[20px] sm:pt-[40px] sm:pb-[50px] mt-[3px]">
+				<h3
+					class="font-normal sm:text-[40px] text-2xl leading-[46px] font-Vollkorn text-center text-black-400 mb-[6px]">
+					Заказать
 					звонок
 				</h3>
 				<label class="mb-1 mt-[14px] font-medium text-base leading-6 text-gray-300">Ваше имя:</label>
 				<input
-					class="bg-light-200 w-full rounded font-medium text-[17px] leading-6 py-[15px] px-[17px] border border-light-900"
+					class="bg-light-200 w-full rounded font-medium text-[17px] leading-6 sm:py-[15px] py-[10px] px-[17px] border border-light-900"
 					type="text" name="name">
 
 				<label class="mb-1 mt-[14px] font-medium text-base leading-6 text-gray-300">Телефон:</label>
 				<input
-					class="bg-light-200 w-full rounded font-medium text-[17px] leading-6 py-[15px] px-[17px] border border-light-900"
+					class="bg-light-200 w-full rounded font-medium text-[17px] leading-6 sm:py-[15px] py-[10px] px-[17px] border border-light-900"
 					type="number" name="number">
 
 				<label class="space-x-[10px] cursor-pointer my-[14px]" for="checkbox4">
 					<input type="checkbox" name="check" id="checkbox4">
-					<span class="max-w-[210px] label-text text-base leading-5 font-medium text-gray-300">Я согласен на
+					<span class="max-w-[210px] label-text sm:text-base text-sm leading-5 font-medium text-gray-300">Я согласен на
 						обработку персональных
 						данных</span>
 				</label>
