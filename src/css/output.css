@@ -954,6 +954,10 @@ video {
   margin-top: 6px;
 }
 
+.mt-\[50pz\] {
+  margin-top: 50pz;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2829,6 +2833,10 @@ video {
   font-size: 22px;
 }
 
+.text-\[23px\] {
+  font-size: 23px;
+}
+
 .text-\[24px\] {
   font-size: 24px;
 }
@@ -2871,10 +2879,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[23px\] {
-  font-size: 23px;
 }
 
 .font-bold {
@@ -3057,8 +3061,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
+.text-\[2\] {
+  color: 2;
 }
 
 .underline {
@@ -3839,7 +3843,7 @@ swiper-button-prev {
 @media (min-width: 768px) {
   .catalog-section {
     padding-top: 95px;
-    padding-bottom: 207px;
+    padding-bottom: 121px;
   }
 }
 
@@ -4277,6 +4281,10 @@ swiper-button-prev {
     margin-top: 30px;
   }
 
+  .md\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
   .md\:w-\[500px\] {
     width: 500px;
   }
@@ -4295,6 +4303,14 @@ swiper-button-prev {
 
   .md\:gap-\[118px\] {
     gap: 118px;
+  }
+
+  .md\:p-\[10px\] {
+    padding: 10px;
+  }
+
+  .md\:pb-\[105px\] {
+    padding-bottom: 105px;
   }
 
   .md\:text-\[30px\] {
@@ -4356,6 +4372,10 @@ swiper-button-prev {
 
   .xlg\:max-w-\[413px\] {
     max-width: 413px;
+  }
+
+  .xlg\:max-w-\[555px\] {
+    max-width: 555px;
   }
 }
 

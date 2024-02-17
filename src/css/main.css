@@ -308,7 +308,7 @@ swiper-button-prev {
 /* catalog */
 .catalog-section {
 	background-image: url(../images/hero-bg.png);
-	@apply bg-no-repeat bg-cover md:pt-[95px] md:pb-[207px] py-[50px];
+	@apply bg-no-repeat bg-cover md:pt-[95px] md:pb-[121px] py-[50px];
 }
 
 .read-more::before {
