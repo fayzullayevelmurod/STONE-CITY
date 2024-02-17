@@ -1555,6 +1555,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -2207,6 +2211,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-b {
@@ -4285,6 +4293,18 @@ swiper-button-prev {
     margin-top: 100px;
   }
 
+  .md\:mt-\[110px\] {
+    margin-top: 110px;
+  }
+
+  .md\:mb-\[110px\] {
+    margin-bottom: 110px;
+  }
+
+  .md\:mb-\[40px\] {
+    margin-bottom: 40px;
+  }
+
   .md\:w-\[500px\] {
     width: 500px;
   }
@@ -4301,12 +4321,24 @@ swiper-button-prev {
     max-width: 692px;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:gap-\[118px\] {
     gap: 118px;
   }
 
   .md\:p-\[10px\] {
     padding: 10px;
+  }
+
+  .md\:p-\[\] {
+    padding: ;
+  }
+
+  .md\:p-\[30px\] {
+    padding: 30px;
   }
 
   .md\:pb-\[105px\] {
@@ -4342,6 +4374,14 @@ swiper-button-prev {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:rounded-4xl {
+    border-radius: 25px;
+  }
+
+  .lg\:p-\[50px\] {
+    padding: 50px;
   }
 
   .lg\:px-\[10px\] {
