@@ -240,10 +240,12 @@ swiper-button-prev {
 }
 
 .swiper-button-prev {
+	top: 42%;
 	left: -77px !important;
 }
 
 .swiper-button-next {
+	top: 44%;
 	right: -77px !important;
 }
 
