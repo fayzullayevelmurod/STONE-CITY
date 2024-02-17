@@ -80,3 +80,30 @@ for (i = 0; i < acc.length; i++) {
 		}
 	});
 }
+
+// Modal
+const searchModalClose = document.querySelector('.search-modal__close');
+const searchModal = document.querySelector('.search-modal');
+const searchModalOpen = document.querySelector('#search-modal-open');
+
+function openModal() {
+	searchModal.classList.remove('hidden');
+	searchModal.classList.add('block');
+	document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+	searchModal.classList.remove('block');
+	searchModal.classList.add('hidden');
+	document.body.style.overflow = 'auto';
+}
+
+searchModalOpen.addEventListener('click', openModal)
+
+searchModalClose.addEventListener('click', closeModal)
+
+document.body.addEventListener('click', (e) => {
+	if (e.target === searchModal && searchModal.classList.contains('search-modal')) {
+		closeModal();
+	}
+})
