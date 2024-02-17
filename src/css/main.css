@@ -384,6 +384,27 @@ swiper-button-prev {
 }
 
 /* media query */
+@media screen and (max-width: 1600px) {
+	.swiper-button-prev {
+		@apply left-[-30px] !important;
+	}
+
+	.swiper-button-next {
+		@apply right-[-30px] !important;
+	}
+}
+
+@media screen and (max-width: 1490px) {
+
+	.swiper-button-prev {
+		@apply left-[20px] bottom-[-20px] top-auto !important;
+	}
+
+	.swiper-button-next {
+		@apply right-[20px] bottom-[-20px] top-auto !important;
+	}
+}
+
 @media screen and (max-width: 1440px) {
 	.container {
 		@apply max-w-full pl-[20px] pr-[20px];
