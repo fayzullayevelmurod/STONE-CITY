@@ -49,22 +49,10 @@
 									class="dropdown-menu bg-black-400 absolute hidden left-[-30px] font-semibold text-[15px] lg:bg-white  z-10 pt-[42px] top-0">
 									<ul class="bg-green-300 px-[30px] py-[20px] space-y-3 text-white">
 										<li>
-											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">мрамора</a>
 										</li>
 										<li>
-											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
-										</li>
-										<li>
-											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
-										</li>
-										<li>
-											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
-										</li>
-										<li>
-											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
-										</li>
-										<li>
-											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
+											<a class="hover:text-silver-gray before:z-10 dropdown-link leading-6" href="#!">Из гранита</a>
 										</li>
 									</ul>
 								</div>
@@ -125,15 +113,15 @@
 				<div class="container flex  lg:items-center items-start h-full justify-between lg:bg-transparent lg:relative">
 					<ul class="lg:flex lg:space-x-[50px] py-[10px] text-base font-semibold leading-6 text-white">
 						<li class="inline-block relative z-[5] ">
-							<div class="dropdown inline-block relative header-bottom__link-first">
-								<button class="flex items-center space-x-[11px]">
+							<div class="dropdown inline-block relative header-bottom__link-first before:z-10">
+								<button class="flex items-center space-x-[11px] relative z-10">
 									<span>Памятники</span>
 									<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 										<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
 									</svg>
 								</button>
 								<div
-									class="dropdown-menu absolute hidden left-[-30px] font-semibold text-[15px] bg-green-100  z-[-10] pt-[42px] top-0">
+									class="dropdown-menu absolute hidden left-[-30px] font-semibold text-[15px] bg-green-100   pt-[42px] top-0">
 									<ul class="bg-green-300 px-[30px] py-[20px] space-y-3">
 										<li>
 											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
@@ -178,7 +166,7 @@
 					</ul>
 
 					<button id="search-modal-open">
-						<img class="cursor-pointer mt-[10px] w-[20px] h-[20px] " src="./src/images/icons/search-icon.svg"
+						<img class="cursor-pointer lg:mt-0 mt-[10px] w-[20px] h-[20px] " src="./src/images/icons/search-icon.svg"
 							alt="search-icon">
 					</button>
 				</div>
@@ -196,8 +184,10 @@
 							<div class="swiper-slide">
 								<div class="flex flex-wrap gap-[30px] items-start justify-between">
 									<div class="pt-[40px]">
-										<h3 class="title-text__two text-black-400 uppercase max-w-[442px]"><span>изготовление</span>
-											памятников</h3>
+										<h3 class="title-text__two text-black-400 uppercase max-w-[442px] relative -z-10">
+											<span>изготовление</span>
+											памятников
+										</h3>
 										<p class="text-base font-normal mt-[14px] md:mb-[60px] mb-[30px] leading-6 text-gray-300">Из
 											мрамора, гранита
 											и
