@@ -1,3 +1,4 @@
+//  swiper
 var swiper = new Swiper(".mySwiper", {
 	navigation: {
 		nextEl: ".swiper-button-next",
@@ -30,6 +31,7 @@ var swiper = new Swiper(".discount-swiper", {
 	},
 });
 
+// read more
 const readMore = document.querySelector('.read-more');
 const readMoreText = document.querySelector('.hide-text');
 const readMoreIcon = document.querySelector('.read-more__icon');
@@ -48,10 +50,10 @@ readMore.addEventListener('click', () => {
 	}
 });
 
-let acc = document.getElementsByClassName("accordion");
+// accordion
+let acc = document.querySelectorAll(".accordion");
 let i;
 
-// Manually set the first accordion to be active
 acc[0].classList.add("active");
 let firstPanel = acc[0].nextElementSibling;
 firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
@@ -59,7 +61,6 @@ acc[0].querySelector('img').src = "./src/images/icons/minus.svg";
 
 for (i = 0; i < acc.length; i++) {
 	acc[i].addEventListener("click", function () {
-		// Close all other accordions
 		for (let j = 0; j < acc.length; j++) {
 			if (j !== i) {
 				acc[j].classList.remove("active");
@@ -85,25 +86,30 @@ for (i = 0; i < acc.length; i++) {
 const searchModalClose = document.querySelector('.search-modal__close');
 const searchModal = document.querySelector('.search-modal');
 const searchModalOpen = document.querySelector('#search-modal-open');
+const callModal = document.querySelector('.call-modal');
+const callModalOpen = document.querySelector('.call-modal__open');
+const callModalClose = document.querySelector('.call-modal__close');
 
-function openModal() {
-	searchModal.classList.remove('hidden');
-	searchModal.classList.add('block');
+function openModal(modal) {
+	modal.classList.remove('hidden');
+	modal.classList.add('block');
 	document.body.style.overflow = 'hidden';
 }
 
-function closeModal() {
-	searchModal.classList.remove('block');
-	searchModal.classList.add('hidden');
+function closeModal(modal) {
+	modal.classList.remove('block');
+	modal.classList.add('hidden');
 	document.body.style.overflow = 'auto';
 }
 
-searchModalOpen.addEventListener('click', openModal)
+searchModalOpen.addEventListener('click', () => openModal(searchModal));
+searchModalClose.addEventListener('click', () => closeModal(searchModal));
 
-searchModalClose.addEventListener('click', closeModal)
+callModalOpen.addEventListener('click', () => openModal(callModal));
+callModalClose.addEventListener('click', () => closeModal(callModal));
 
 document.body.addEventListener('click', (e) => {
-	if (e.target === searchModal && searchModal.classList.contains('search-modal')) {
-		closeModal();
+	if ((e.target === searchModal || e.target === callModal) && e.target.classList.contains('modal')) {
+		closeModal(e.target);
 	}
-})
+});
