@@ -383,6 +383,18 @@ swiper-button-prev {
 	grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
 }
 
+.hover-line::before {
+	content: none;
+}
+
+.monuments-box:hover .border-item {
+	@apply decoration-green-100 underline text-green-100
+}
+
+.monuments-box .border-item::before {
+	content: none;
+}
+
 /* media query */
 @media screen and (max-width: 1600px) {
 	.swiper-button-prev {

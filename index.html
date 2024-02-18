@@ -69,6 +69,60 @@
 							<li class="w-fit">
 								<a class="hover:text-green-100" href="#!">Отзывы</a>
 							</li>
+
+							<ul class="lg:flex lg:hidden lg:space-x-[50px] py-[10px] text-base font-semibold leading-6 text-white">
+								<li class="inline-block relative z-[5] ">
+									<div class="dropdown inline-block relative header-bottom__link-first before:z-10">
+										<button class="flex items-center font-normal space-x-[11px] relative z-10">
+											<span>Памятники</span>
+											<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+												<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+											</svg>
+										</button>
+										<div
+											class="dropdown-menu absolute hidden left-[-30px] font-semibold text-[15px] bg-black-400   pt-[42px] top-0">
+											<ul class="bg-green-300 px-[30px] py-[20px] space-y-3">
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
+												</li>
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
+												</li>
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
+												</li>
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
+												</li>
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
+												</li>
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="relative lg:z-10">
+									<a class="header-bottom__link font-normal" href="#!">Услуги</a>
+								</li>
+								<li class="relative lg:z-10">
+									<a class="header-bottom__link font-normal" href="#!">Виды камня</a>
+								</li>
+								<li class="relative lg:z-10">
+									<a class="header-bottom__link font-normal" href="#!">Аксессуары</a>
+								</li>
+								<li class="relative lg:z-10">
+									<a class="header-bottom__link font-normal" href="#!">Скидки</a>
+								</li>
+								<li class="relative lg:z-10">
+									<a class="header-bottom__link font-normal" href="#!">Наши работы</a>
+								</li>
+								<li>
+									<a class="header-bottom__link font-normal" href="#!">Контакты</a>
+								</li>
+							</ul>
 						</ul>
 					</div>
 
@@ -79,6 +133,14 @@
 						<a href="#!">
 							<img src="./src/images/icons/whatsapp.svg" alt="whatsapp icon">
 						</a>
+						<button class="lg:hidden block" id="search-modal-open">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="w-[36px] h-[36px]">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+							</svg>
+
+						</button>
 					</div>
 				</div>
 			</div>
@@ -109,7 +171,7 @@
 						консультация</a>
 				</div>
 			</div>
-			<div class="bg-green-100 py-2 parent-box">
+			<div class="bg-green-100 lg:block hidden py-2 parent-box">
 				<div class="container flex  lg:items-center items-start h-full justify-between lg:bg-transparent lg:relative">
 					<ul class="lg:flex lg:space-x-[50px] py-[10px] text-base font-semibold leading-6 text-white">
 						<li class="inline-block relative z-[5] ">
@@ -300,7 +362,8 @@
 								<div
 									class="flex items-center py-[20px] pl-[20px] pr-[14px] space-x-[14px] rounded bg-light-200 hover:border-green-800 border border-transparent cursor-pointer monuments-box">
 									<img src="./src/images/monuments-5.png" alt="">
-									<a class="text-black-400 font-medium text-lg border-item" href="#!">В форме креста, православные</a>
+									<a class="text-black-400 font-medium text-lg border-item" href="#!">В форме креста,
+										православные</a>
 								</div>
 
 								<div
@@ -581,38 +644,46 @@
 						<h3 class="title-text__two text-black-400">Изделия <span>из камня</span></h3>
 
 						<div class="grid-box gap-2 mt-[22px]">
-							<div class="flex items-center space-x-[14px] p-[20px] bg-light-200 rounded">
+							<div
+								class="flex items-center space-x-[14px] monuments-box hover:border-green-600 border border-transparent p-[20px] bg-light-200 rounded">
 								<img src="./src/images/stone-1.png" alt="">
-								<p class="font-medium text-lg text-black-400 leading-6">Подоконники</p>
+								<p class="font-medium text-lg text-black-400 border-item leading-6">Подоконники</p>
 							</div>
-							<div class="flex items-center space-x-[14px] p-[20px] bg-light-200 rounded">
+							<div
+								class="flex items-center space-x-[14px] monuments-box hover:border-green-600 border border-transparent p-[20px] bg-light-200 rounded">
 								<img src="./src/images/stone-2.png" alt="">
-								<p class="font-medium text-lg text-black-400 leading-6">Столешницы</p>
+								<p class="font-medium text-lg text-black-400 border-item leading-6">Столешницы</p>
 							</div>
-							<div class="flex items-center space-x-[14px] p-[20px] bg-light-200 rounded">
+							<div
+								class="flex items-center space-x-[14px] monuments-box hover:border-green-600 border border-transparent p-[20px] bg-light-200 rounded">
 								<img src="./src/images/stone-3.png" alt="">
-								<p class="font-medium text-lg text-black-400 leading-6">Камины</p>
+								<p class="font-medium text-lg text-black-400 border-item leading-6">Камины</p>
 							</div>
-							<div class="flex items-center space-x-[14px] p-[20px] bg-light-200 rounded">
+							<div
+								class="flex items-center space-x-[14px] monuments-box hover:border-green-600 border border-transparent p-[20px] bg-light-200 rounded">
 								<img src="./src/images/stone-4.png" alt="">
-								<p class="font-medium text-lg text-black-400 leading-6">Отливы</p>
+								<p class="font-medium text-lg text-black-400 border-item leading-6">Отливы</p>
 							</div>
 
-							<div class="flex items-center space-x-[14px] p-[20px] bg-light-200 rounded">
+							<div
+								class="flex items-center space-x-[14px] monuments-box hover:border-green-600 border border-transparent p-[20px] bg-light-200 rounded">
 								<img src="./src/images/stone-5.png" alt="">
-								<p class="font-medium text-lg text-black-400 leading-6">Порталы длякаминов</p>
+								<p class="font-medium text-lg text-black-400 border-item leading-6">Порталы длякаминов</p>
 							</div>
-							<div class="flex items-center space-x-[14px] p-[20px] bg-light-200 rounded">
+							<div
+								class="flex items-center space-x-[14px] monuments-box hover:border-green-600 border border-transparent p-[20px] bg-light-200 rounded">
 								<img src="./src/images/stone-6.png" alt="">
-								<p class="font-medium text-lg text-black-400 leading-6">Лестницы</p>
+								<p class="font-medium text-lg text-black-400 border-item leading-6">Лестницы</p>
 							</div>
-							<div class="flex items-center space-x-[14px] p-[20px] bg-light-200 rounded">
+							<div
+								class="flex items-center space-x-[14px] monuments-box hover:border-green-600 border border-transparent p-[20px] bg-light-200 rounded">
 								<img src="./src/images/stone-7.png" alt="">
-								<p class="font-medium text-lg text-black-400 leading-6">Гибкий камень</p>
+								<p class="font-medium text-lg text-black-400 border-item leading-6">Гибкий камень</p>
 							</div>
-							<div class="flex items-center space-x-[14px] p-[20px] bg-light-200 rounded">
+							<div
+								class="flex items-center space-x-[14px] monuments-box hover:border-green-600 border border-transparent p-[20px] bg-light-200 rounded">
 								<img src="./src/images/stone-4.png" alt="">
-								<p class="font-medium text-lg text-black-400 leading-6">Фасады из камня</p>
+								<p class="font-medium text-lg text-black-400 border-item leading-6">Фасады из камня</p>
 							</div>
 
 						</div>
