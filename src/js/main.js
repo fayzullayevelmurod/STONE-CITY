@@ -76,7 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	// media menu
 	const headerMenuTop = document.querySelector('.header-menu__top');
 	const openMenuBtn = document.querySelector('.header-top__btn');
-	const closeMenuBtn = document.querySelector('.close-menu')
+	const closeMenuBtn = document.querySelector('.close-menu');
+
 	function showMenu() {
 		headerMenuTop.classList.toggle('translate-x-[-100%]');
 	}
@@ -173,6 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const searchModalClose = document.querySelector('.search-modal__close');
 	const searchModal = document.querySelector('.search-modal');
 	const searchModalOpen = document.querySelector('#search-modal-open');
+	const searchModalOpenTwo = document.querySelector('#search-modal-open2');
 	const callModal = document.querySelector('.call-modal');
 	const callModalOpen = document.querySelector('.call-modal__open');
 	const callModalClose = document.querySelector('.call-modal__close');
@@ -191,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	searchModalOpen.addEventListener('click', () => openModal(searchModal));
 	searchModalClose.addEventListener('click', () => closeModal(searchModal));
-
+	searchModalOpenTwo.addEventListener('click', () => openModal(searchModal));
 	callModalOpen.addEventListener('click', () => openModal(callModal));
 	callModalClose.addEventListener('click', () => closeModal(callModal));
 
