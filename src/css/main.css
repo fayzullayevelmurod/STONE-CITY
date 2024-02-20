@@ -115,13 +115,16 @@ input[type="checkbox"]:checked:after {
 .title-text {
 	@apply font-Vollkorn text-[56px] font-normal leading-[55px] text-black-400
 }
-
+.title-text__sm {
+	@apply font-Vollkorn text-[46px] font-normal leading-[56px] text-black-100
+}
 .title-text__two {
 	@apply font-Vollkorn text-[56px] font-normal leading-[66px];
 }
 
 .title-text>span,
-.title-text__two>span {
+.title-text__two>span,
+.title-text__sm>span {
 	@apply text-green-100;
 }
 
@@ -394,7 +397,6 @@ swiper-button-prev {
 .monuments-box .border-item::before {
 	content: none;
 }
-
 /* media query */
 @media screen and (max-width: 1600px) {
 	.swiper-button-prev {

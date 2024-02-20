@@ -43,6 +43,62 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
+	// other-products
+	var swiper = new Swiper(".products-swiper", {
+		slidesPerView: 3,
+		spaceBetween: 20,
+		loop: true,
+		navigation: {
+			nextEl: ".swiper-button-next4",
+			prevEl: ".swiper-button-prev4",
+		},
+		breakpoints: {
+			1150: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			720: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			542: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			0: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+			},
+		}
+	});
+
+	var swiper = new Swiper(".products-swiper2", {
+		slidesPerView: 3,
+		spaceBetween: 20,
+		loop: true,
+		navigation: {
+			nextEl: ".swiper-button-next5",
+			prevEl: ".swiper-button-prev5",
+		},
+		breakpoints: {
+			1150: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			720: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			542: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			0: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+			},
+		}
+	});
 
 	var swiper = new Swiper(".discount-swiper", {
 		slidesPerView: 3,
@@ -87,11 +143,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// read more
-	try {
-		const readMore = document.querySelector('.read-more');
-		const readMoreText = document.querySelector('.hide-text');
-		const readMoreIcon = document.querySelector('.read-more__icon');
+	const readMore = document.querySelector('.read-more');
+	const readMoreText = document.querySelector('.hide-text');
+	const readMoreIcon = document.querySelector('.read-more__icon');
 
+	if (readMore) {
 		readMore.addEventListener('click', () => {
 			if (readMoreText.classList.contains('hidden')) {
 				readMore.textContent = 'Скрыть текст';
@@ -105,42 +161,10 @@ document.addEventListener('DOMContentLoaded', function () {
 				readMoreText.classList.add('hidden');
 			}
 		});
-	} catch (error) {
-		throw error
 	}
 
 	// accordion
 	try {
-		// let acc = document.querySelectorAll(".accordion");
-		// let i;
-
-		// acc[0].classList.add("active");
-		// let firstPanel = acc[0].nextElementSibling;
-		// firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
-		// acc[0].querySelector('img').src = "./src/images/icons/minus.svg";
-
-		// for (i = 0; i < acc.length; i++) {
-		// 	acc[i].addEventListener("click", function () {
-		// 		for (let j = 0; j < acc.length; j++) {
-		// 			if (j !== i) {
-		// 				acc[j].classList.remove("active");
-		// 				let otherPanel = acc[j].nextElementSibling;
-		// 				otherPanel.style.maxHeight = null;
-		// 				acc[j].querySelector('img').src = "./src/images/icons/pluse.svg";
-		// 			}
-		// 		}
-
-		// 		this.classList.toggle("active");
-		// 		let panel = this.nextElementSibling;
-		// 		if (panel.style.maxHeight) {
-		// 			panel.style.maxHeight = null;
-		// 			this.querySelector('img').src = "./src/images/icons/pluse.svg";
-		// 		} else {
-		// 			panel.style.maxHeight = panel.scrollHeight + "px";
-		// 			this.querySelector('img').src = "./src/images/icons/minus.svg";
-		// 		}
-		// 	});
-
 		let acc = document.querySelectorAll(".accordion");
 		for (let i = 0; i < acc.length; i++) {
 			let panel = acc[i].nextElementSibling;
@@ -221,6 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		textBox.addEventListener('click', function () {
 			options.classList.toggle('hidden');
+			// this.parentNode.classList.toggle('active');
 		});
 
 		// Close the dropdown when clicking outside

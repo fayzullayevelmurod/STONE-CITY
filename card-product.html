@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>КАМЕННЫЙ ГОРОД</title>
+	<!-- Monserat font -->
+	<link rel="stylesheet" href="./src/fonts/Montserrat/stylesheet.css">
+	<!-- Vollkorn font -->
+	<link rel="stylesheet" href="./src/fonts/Vollkorn/stylesheet.css">
+	<!-- swiper css file -->
+	<link rel="stylesheet" href="./src/libs/swiper-bundle.min.css">
+	<!-- custom css file -->
+	<link rel="stylesheet" href="./src/css/output.css">
+</head>
+
+<body>
+
+	<div class="wrapper overflow-hidden">
+
+		<!-- header -->
+		<header class="header">
+
+			<div class="border-b border-b-light-400 border-solid py-3">
+				<div class="container flex items-center justify-between">
+					<button class="lg:hidden header-top__btn">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+						</svg>
+					</button>
+
+					<div class="relative">
+						<ul
+							class="header-menu__top lg:translate-x-0 translate-x-[-100%] duration-300 lg:flex lg:text-black-400 text-white lg:z-auto z-50 items-center lg:gap-10 lg:flex lg:bg-transparent lg:relative lg:space-y-0 space-y-[10px] fixed bg-black-400 lg:w-auto w-[60%] top-0 left-0 h-full lg:pl-0 pl-[20px] lg:pt-0 pt-[20px]">
+							<button class="close-menu absolute top-[20px] right-[20px]">
+								<img src="./src/images/icons/close.svg" alt="">
+							</button>
+							<div class="dropdown w-fit relative header-top__item">
+								<button class="flex items-center relative z-20 space-x-[7px]">
+									<span>О компании</span>
+									<svg class="fill-current h-4 w-4 relative z-20" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 20 20">
+										<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+									</svg>
+								</button>
+								<div
+									class="dropdown-menu bg-black-400 absolute hidden left-[-30px] font-semibold text-[15px] lg:bg-white  z-10 pt-[42px] top-0">
+									<ul class="bg-green-300 px-[30px] py-[20px] space-y-3 text-white">
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">мрамора</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray before:z-10 dropdown-link leading-6" href="#!">Из гранита</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<li class="w-fit">
+								<a class="hover:text-green-100" href="#!">Как заказать</a>
+							</li>
+							<li class="w-fit">
+								<a class="hover:text-green-100" href="#!">Доставка</a>
+							</li>
+							<li class="w-fit">
+								<a class="hover:text-green-100" href="#!">Монтаж</a>
+							</li>
+							<li class="w-fit">
+								<a class="hover:text-green-100" href="#!">Отзывы</a>
+							</li>
+
+							<ul class="lg:flex lg:hidden lg:space-x-[50px] py-[10px] text-base font-semibold leading-6 text-white">
+								<li class="inline-block relative z-[5] ">
+									<div class="dropdown inline-block relative header-bottom__link-first before:z-10">
+										<button class="flex items-center font-normal space-x-[11px] relative z-10">
+											<span>Памятники</span>
+											<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+												<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+											</svg>
+										</button>
+										<div
+											class="dropdown-menu absolute hidden left-[-30px] font-semibold text-[15px] bg-black-400   pt-[42px] top-0">
+											<ul class="bg-green-300 px-[30px] py-[20px] space-y-3">
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
+												</li>
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
+												</li>
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
+												</li>
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
+												</li>
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
+												</li>
+												<li>
+													<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="relative lg:z-10">
+									<a class="header-bottom__link font-normal" href="#!">Услуги</a>
+								</li>
+								<li class="relative lg:z-10">
+									<a class="header-bottom__link font-normal" href="#!">Виды камня</a>
+								</li>
+								<li class="relative lg:z-10">
+									<a class="header-bottom__link font-normal" href="#!">Аксессуары</a>
+								</li>
+								<li class="relative lg:z-10">
+									<a class="header-bottom__link font-normal" href="#!">Скидки</a>
+								</li>
+								<li class="relative lg:z-10">
+									<a class="header-bottom__link font-normal" href="#!">Наши работы</a>
+								</li>
+								<li>
+									<a class="header-bottom__link font-normal" href="#!">Контакты</a>
+								</li>
+							</ul>
+						</ul>
+					</div>
+
+					<div class="flex items-center space-x-[17px]">
+						<a href="#!">
+							<img src="./src/images/icons/telegram.svg" alt="telegram icon">
+						</a>
+						<a href="#!">
+							<img src="./src/images/icons/whatsapp.svg" alt="whatsapp icon">
+						</a>
+						<button class="lg:hidden block" id="search-modal-open">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="w-[36px] h-[36px]">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+							</svg>
+
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="container flex gap-[20px] flex-wrap items-center justify-between py-5">
+				<div>
+					<h3 class="font-Vollkorn md:text-4xl text-2xl leading-9 font-normal text-green-100">КАМЕННЫЙ ГОРОД</h3>
+					<p class="max-w-[241px] font-medium text-sm leading-5.5">Изделия из натурального камня Памятники от
+						производителя</p>
+				</div>
+
+				<div class="text-sm leading-5.5">
+					<p class="font-normal">г. Екатеринбург, <br>
+						ул. Академика Бардина, д.6, корп. 1 (вход с ул.Бардина)</p>
+					<a class="font-medium text-green-100 border-b border-b-green-100 mt-[6px] hover:text-black-400 hover:border-b-black-400"
+						href="#!">kamen-gorod96@ya.ru</a>
+				</div>
+
+				<div class="flex flex-wrap items-center gap-[30px]">
+					<div class="lg:text-end">
+						<a class="font-semibold text-black-400 text-1xl space-y-1 leading-6 block hover:text-green-100" href="#!">8
+							(343) 200-05-44</a>
+						<a class="call-modal__open font-medium text-green-100 border-b border-b-green-100 leading-6 text-base hover:text-black-400 hover:border-b-black-400"
+							href="#!">Заказать звонок</a>
+					</div>
+					<a class="font-semibold text-sm leading-6 text-white bg-green-700 px-[30px] py-[13px] rounded hover:bg-black-400"
+						href="#!">Бесплатная
+						консультация</a>
+				</div>
+			</div>
+			<div class="bg-green-100 lg:block hidden py-2 parent-box">
+				<div class="container flex  lg:items-center items-start h-full justify-between lg:bg-transparent lg:relative">
+					<ul class="lg:flex lg:space-x-[50px] py-[10px] text-base font-semibold leading-6 text-white">
+						<li class="inline-block relative z-[5] ">
+							<div class="dropdown inline-block relative header-bottom__link-first before:z-10">
+								<button class="flex items-center space-x-[11px] relative z-10">
+									<span>Памятники</span>
+									<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+									</svg>
+								</button>
+								<div
+									class="dropdown-menu absolute hidden left-[-30px] font-semibold text-[15px] bg-green-100   pt-[42px] top-0">
+									<ul class="bg-green-300 px-[30px] py-[20px] space-y-3">
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из гранита</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из мрамора</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из коелги</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Из габбро</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Вертикальные</a>
+										</li>
+										<li>
+											<a class="hover:text-silver-gray dropdown-link leading-6" href="#!">Горизонтальные</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="relative lg:z-10">
+							<a class="header-bottom__link" href="#!">Услуги</a>
+						</li>
+						<li class="relative lg:z-10">
+							<a class="header-bottom__link" href="#!">Виды камня</a>
+						</li>
+						<li class="relative lg:z-10">
+							<a class="header-bottom__link" href="#!">Аксессуары</a>
+						</li>
+						<li class="relative lg:z-10">
+							<a class="header-bottom__link" href="#!">Скидки</a>
+						</li>
+						<li class="relative lg:z-10">
+							<a class="header-bottom__link" href="#!">Наши работы</a>
+						</li>
+						<li>
+							<a class="header-bottom__link" href="#!">Контакты</a>
+						</li>
+					</ul>
+
+					<button id="search-modal-open2">
+						<img class="cursor-pointer lg:mt-0 mt-[10px] w-[20px] h-[20px] " src="./src/images/icons/search-icon.svg"
+							alt="search-icon">
+					</button>
+				</div>
+			</div>
+
+		</header>
+
+		<!-- main -->
+		<main class="main">
+			<div class="container mt-[24px] mb-[30px] flex items-center gap-[11px]">
+				<a class="flex items-center gap-[16px] font-Monserat text-sm leading-5.5" href="#!">
+					<span>Главная</span>
+					<img src="src/images/icons/next-icon2.svg" alt="">
+				</a>
+				<a class="flex items-center gap-[16px] font-Monserat text-sm leading-5.5" href="#!">
+					<span>Памятники</span>
+					<img src="src/images/icons/next-icon2.svg" alt="">
+				</a>
+				<a class="flex items-center gap-[16px] font-Monserat text-sm leading-5.5" href="#!">
+					<span>Мраморный памятник 01-38</span>
+				</a>
+			</div>
+
+			<section class="product-hero pb-[66px]">
+				<div class="container">
+					<h3 class="title-text__two">Мраморный памятник 01-38</h3>
+
+					<div class="grid items-center grid-cols-2 mt-[51px]">
+						<div>
+							<img src="src/images/product-1.png" alt="product-1">
+						</div>
+
+						<div class="max-w-[700px]">
+							<div class="flex w-full gap-5">
+								<div class="sellect-dropdown relative w-[220px] h-[56px]">
+									<input
+										class="absolute textBox border border-[#D0E1D0] placeholder:text-base rounded placeholder:font-medium placeholder:leading-6 top-0 left-0 w-full h-full cursor-pointer bg-white px-[20px] py-[16px]"
+										type="text" placeholder="Размер" readonly="">
+									<div
+										class="option border border-t-0 border-[#D0E1D0] absolute top-[52px] z-[60] w-full bg-white rounded-b overflow-hidden hidden">
+										<div class="option-item py-[12px] px-[20px] cursor-pointer hover:text-green-300 hover:underline">
+											100
+										</div>
+										<div class="option-item py-[12px] px-[20px] cursor-pointer hover:text-green-300 hover:underline">
+											1200
+										</div>
+										<div class="option-item py-[12px] px-[20px] cursor-pointer hover:text-green-300 hover:underline">
+											1400
+										</div>
+									</div>
+								</div>
+								<div class="sellect-dropdown relative w-[220px] h-[56px]">
+									<input
+										class="absolute textBox border border-[#D0E1D0] placeholder:text-base rounded placeholder:font-medium placeholder:leading-6 top-0 left-0 w-full h-full cursor-pointer bg-white px-[20px] py-[16px]"
+										type="text" placeholder="Материал" readonly="">
+									<div
+										class="option border border-t-0 border-[#D0E1D0] absolute top-[52px] z-[60] w-full bg-white rounded-b overflow-hidden hidden">
+										<div class="option-item py-[12px] px-[20px] cursor-pointer hover:text-green-300 hover:underline">
+											100
+										</div>
+										<div class="option-item py-[12px] px-[20px] cursor-pointer hover:text-green-300 hover:underline">
+											1200
+										</div>
+										<div class="option-item py-[12px] px-[20px] cursor-pointer hover:text-green-300 hover:underline">
+											1400
+										</div>
+									</div>
+								</div>
+								<div class="sellect-dropdown relative w-[220px] h-[56px]">
+									<input
+										class="absolute textBox border border-[#D0E1D0] placeholder:text-base rounded placeholder:font-medium placeholder:leading-6 top-0 left-0 w-full h-full cursor-pointer bg-white px-[20px] py-[16px]"
+										type="text" placeholder="Цветник" readonly="">
+									<div
+										class="option border border-t-0 border-[#D0E1D0] absolute top-[52px] z-[60] w-full bg-white rounded-b overflow-hidden hidden">
+										<div class="option-item py-[12px] px-[20px] cursor-pointer hover:text-green-300 hover:underline">
+											100
+										</div>
+										<div class="option-item py-[12px] px-[20px] cursor-pointer hover:text-green-300 hover:underline">
+											1200
+										</div>
+										<div class="option-item py-[12px] px-[20px] cursor-pointer hover:text-green-300 hover:underline">
+											1400
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex items-center justify-between mt-[30px] mb-[60px]">
+								<h4 class="whitespace-nowrap text-black-400 font-semibold text-[46px] leading-6 font-Vollkorn">
+									22 000 руб.</h4>
+								<a class="btn text-center mx-[22px] min-w-[202px]" href="#!">заказать</a>
+								<div class="flex items-center gap-[12px]">
+									<img src="src/images/icons/info-icon.svg" alt="">
+									<p class="text-sm leading-5.5 text-gray-300">Точную стоимость расчитывает менеджер</p>
+								</div>
+							</div>
+
+							<div class="flex flex-wrap justify-between gap-5">
+								<div class="bg-light-700 rounded xsm:p-[20px] p-[10px] border border-light-600 max-w-[340px] w-full">
+									<h4 class="font-Vollkorn text-[30px] leading-[40px] font-normal to-black-400 mb-[10px]">Материал:</h4>
+									<p class="font-medium text-base text-gray-300 py-[3px]">
+										<span class="font-normal text-gray-700">Материал:</span> мрамор
+									</p>
+									<p class="font-medium text-base text-gray-300 py-[3px]">
+										<span class="font-normal text-gray-700">Полировка:</span> все стороны
+									</p>
+									<p class="font-medium text-base text-gray-300 py-[3px]">
+										<span class="font-normal text-gray-700">Качество мрамора:</span> высший сорт
+									</p>
+								</div>
+								<div class="bg-light-700 rounded xsm:p-[20px] p-[10px] border border-light-600 max-w-[340px] w-full">
+									<h4 class="font-Vollkorn text-[30px] leading-[40px] font-normal to-black-400 mb-[10px]">Размеры:</h4>
+									<p class="font-medium text-base text-gray-300 py-[3px]">
+										<span class="font-normal text-gray-700">Стела:</span> 1000/500/70
+									</p>
+									<p class="font-medium text-base text-gray-300 py-[3px]">
+										<span class="font-normal text-gray-700">Тумба:</span> 600/150/150
+									</p>
+									<p class="font-medium text-base text-gray-300 py-[3px]">
+										<span class="font-normal text-gray-700">Цветник:</span> 1000/600
+									</p>
+								</div>
+								<div class="bg-light-700 rounded xsm:p-[20px] p-[10px] border border-light-600 max-w-[340px] w-full">
+									<p class="font-medium text-base text-gray-300 py-[3px]">
+										<span class="font-normal text-gray-700">Срок изготовления:</span> 2 недели
+									</p>
+									<p class="font-medium text-base text-gray-300 py-[3px]">
+										<span class="font-normal text-gray-700">Доставка:</span> 2000 руб.
+									</p>
+									<p class="font-medium text-base text-gray-300 py-[3px]">
+										<span class="font-normal text-gray-700">Хранение на складке:</span> бесплатно
+									</p>
+									<p class="font-medium text-base text-gray-300 py-[3px]">
+										<span class="font-normal text-gray-700">Гарантия:</span> 25 лет
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Equipment -->
+			<section class="bg-[#EFF4EF] pt-[59px] pb-[65px]">
+				<div class="container">
+					<div class="flex gap-5">
+						<div class="p-10 rounded-[15px] bg-[#fff]">
+							<h3 class="font-Vollkorn font-normal text-[30px] leading-10 to-black-400 mb-5">Комплектация:</h3>
+							<p class="text-base text-gray-300 pb-[25px]">
+								Современное собственное профессиональное оборудование позволяет
+								выполнять заказы
+								любой сложности и объемов.
+							</p>
+							<p class="text-base text-gray-300">
+								Мы напрямую сотрудничаем с поставщиками натурального камня из России, Украины, Испании, Италии и Китая и
+								можем
+								предложить приобрести у нас изделие из натурального камня по невысокой цене.</p>
+						</div>
+						<div class="p-10 rounded-[15px] bg-[#fff]">
+							<h3 class="font-Vollkorn font-normal text-[30px] leading-10 to-black-400 mb-5">Комплектация:</h3>
+							<p class="text-base text-gray-300 pb-[25px]">
+								Современное собственное профессиональное оборудование позволяет
+								выполнять заказы
+								любой сложности и объемов.
+							</p>
+							<p class="text-base text-gray-300">
+								Мы напрямую сотрудничаем с поставщиками натурального камня из России, Украины, Испании, Италии и Китая и
+								можем
+								предложить приобрести у нас изделие из натурального камня по невысокой цене.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- other-products-section -->
+			<section class="py-[100px]">
+				<div class="container">
+					<div class="flex items-center justify-between">
+						<h2 class="title-text__sm"><span>Другие товары</span> из этой категории</h2>
+
+						<div class="flex items-center gap-[65px]">
+							<div class="swiper-button cursor-pointer swiper-button-prev4">
+								<svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 1.5L1.5 12M1.5 12L12 22.5M1.5 12H28.5" stroke="#739678" stroke-width="3"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<div class="swiper-button cursor-pointer swiper-button-next4">
+								<svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18 1.5L28.5 12M28.5 12L18 22.5M28.5 12H1.5" stroke="#739678" stroke-width="3"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="swiper products-swiper mt-[50px]">
+						<div class="swiper-wrapper">
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/catalog-1.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Гранитный
+									памятник 01-11</h4>
+
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Стела:</span> 1000/500/70
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Тумба:</span> 600/150/150
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Цветник:</span> 1000/600
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал:</span> гранит
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6">12 000 руб.</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-img-1.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Мраморный
+									памятник 01-31</h4>
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Стела:</span> 1000/500/70
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Тумба:</span> 600/150/150
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Цветник:</span> 1000/600
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал:</span> гранит
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6">9 500 руб.</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-img-3.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Мраморный
+									памятник 01-32</h4>
+
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Стела:</span> 1000/500/70
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Тумба:</span> 600/150/150
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Цветник:</span> 1000/600
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал:</span> гранит
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6">12 000 руб.</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/catalog-1.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Гранитный
+									памятник 01-11</h4>
+
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Стела:</span> 1000/500/70
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Тумба:</span> 600/150/150
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Цветник:</span> 1000/600
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал:</span> гранит
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6">12 000 руб.</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-img-1.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Мраморный
+									памятник 01-31</h4>
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Стела:</span> 1000/500/70
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Тумба:</span> 600/150/150
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Цветник:</span> 1000/600
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал:</span> гранит
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6">9 500 руб.</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-img-3.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Мраморный
+									памятник 01-32</h4>
+
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Стела:</span> 1000/500/70
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Тумба:</span> 600/150/150
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Цветник:</span> 1000/600
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал:</span> гранит
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6">12 000 руб.</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Related products -->
+			<section class="related-products hero-section py-[100px]">
+				<div class="container">
+					<div class="flex items-center justify-between">
+						<h2 class="title-text__sm">Сопутствующие товары</h2>
+
+						<div class="flex items-center gap-[65px]">
+							<div class="swiper-button cursor-pointer swiper-button-prev5">
+								<svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 1.5L1.5 12M1.5 12L12 22.5M1.5 12H28.5" stroke="#739678" stroke-width="3"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<div class="swiper-button cursor-pointer swiper-button-next5">
+								<svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18 1.5L28.5 12M28.5 12L18 22.5M28.5 12H1.5" stroke="#739678" stroke-width="3"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="swiper products-swiper2 mt-[50px]">
+						<div class="swiper-wrapper">
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-1.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Стол и
+									лавочка 11-01</h4>
+
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Возможные варианты камня
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал:</span> гранит/мрамор/коелга/габбро:
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-2.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Ваза 01-12
+								</h4>
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал <span>гранит/мрамор/коелга/габбро</span>
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Цвет:</span> черный/серый/белый:
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-3.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Лампадка
+									02-12</h4>
+
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Возможные варианты камня
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал:</span> гранит/мрамор/коелга/габбро:
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-1.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Стол и
+									лавочка 11-01</h4>
+
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Возможные варианты камня
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал:</span> гранит/мрамор/коелга/габбро:
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-2.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Ваза 01-12
+								</h4>
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал <span>гранит/мрамор/коелга/габбро</span>
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Цвет:</span> черный/серый/белый:
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+							<div
+								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-3.png" alt="">
+								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Лампадка
+									02-12</h4>
+
+								<div class="space-y-[14px]">
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Возможные варианты камня
+									</p>
+									<p class="font-semibold text-base text-gray-300">
+										<span class="font-normal text-gray-700">Материал:</span> гранит/мрамор/коелга/габбро:
+									</p>
+								</div>
+								<div class="flex items-center justify-between mt-10">
+									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
+									<a class="btn inline-block" href="#!">заказать</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Delivery -->
+			<section class="py-[100px]">
+				<div class="container p-10 flex items-start gap-[50px]">
+					<img class="py-[17px] px-[9px]" src="src/images/icons/delivery.svg" alt="">
+					<div>
+						<h5 class="mb-5 font-Vollkorn text-[30px] leading-10">Доставка</h5>
+						<p class="text-base text-gray-300 pb-[22px]">
+							Современное собственное профессиональное оборудование позволяет выполнять заказы любой сложности и
+							объемов.
+						</p>
+						<p class="text-base text-gray-300">
+
+							Мы напрямую сотрудничаем с поставщиками натурального камня из России, Украины, Испании, Италии и Китая и
+							можем
+							предложить приобрести у нас изделие из натурального камня по невысокой цене.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- answers section -->
+			<section class="answers-sectioin md:pb-[119px] md:pt-[98px] py-[50px]">
+				<div class="container flex 1xs:flex-row flex-col justify-between 1xs:gap-[79px] gap-[20px]">
+					<div class="1xs:max-w-[940px] w-full">
+						<div class="flex flex-wrap gap-[20px] justify-between items-start">
+							<h3 class="title-text__two 1xs:max-w-[730px]"><span>Ответы</span> на часто задаваемые вопросы</h3>
+							<img class="md:w-auto w-[50px]" src="./src/images/icons/answer-icon.svg" alt="">
+						</div>
+
+						<div class="space-y-[10px] mt-10">
+							<div>
+								<button
+									class="accordion border border-transparent bg-light-200 flex items-center justify-between cursor-pointer xsm:text-[18px] text-sm font-medium w-full rounded leading-6 xsm:p-[20px] p-[12px] text-left">
+									Как выбрать недорогой памятник?
+									<img class="xsm:w-auto w-[20px] xsm:h-auto h-[20px]" src="./src/images/icons/pluse.svg" alt="">
+								</button>
+
+								<div
+									class="panel leading-6 text-gray-300 mt-1 xsm:text-base text-sm space-y-[27px] overflow-hidden transition-all duration-200 bg-white">
+									<p>
+										Заказывая изготовление памятника на могилу, стоит особое внимание обратить на материал памятника и
+										художественное
+										оформление. Некоторые организации экономят на материале или выдают искусственный камень за
+										натуральный.
+										Прежде, чем
+										заказать изготовление дешевого памятника в какой-либо компании желательно изучить отзывы тех, кто
+										уже
+										делал заказ.
+										Убедитесь, что в кампании работает грамотный специалист, который четко и развернуто ответит на
+										любой,
+										заданный ему
+										вопрос.
+									</p>
+									<p>
+										Помимо материала и размера монумента, основное отличие в цене происходит за счёт обработки камня.
+										Полировка сторон
+										памятника также увеличивает его стоимость. Бюджетный вариант - это полировка только лицевой стороны,
+										а
+										боковые и заднюю
+										стороны оставить с натуральным сколом.
+									</p>
+								</div>
+							</div>
+
+							<div>
+								<button
+									class="accordion border border-transparent bg-light-200 flex items-center justify-between cursor-pointer xsm:text-[18px] text-sm font-medium w-full rounded leading-6 xsm:p-[20px] p-[12px] text-left">
+									Вы даете гарантию на все выполняемые работы?
+									<img class="xsm:w-auto w-[20px] xsm:h-auto h-[20px]" src="./src/images/icons/pluse.svg" alt="">
+								</button>
+
+								<div
+									class="panel leading-6 text-gray-300 mt-1 xsm:text-base text-sm space-y-[27px] overflow-hidden transition-all duration-200 bg-white">
+									<p>
+										Заказывая изготовление памятника на могилу, стоит особое внимание обратить на материал памятника и
+										художественное
+										оформление. Некоторые организации экономят на материале или выдают искусственный камень за
+										натуральный.
+										Прежде, чем
+										заказать изготовление дешевого памятника в какой-либо компании желательно изучить отзывы тех, кто
+										уже
+										делал заказ.
+										Убедитесь, что в кампании работает грамотный специалист, который четко и развернуто ответит на
+										любой,
+										заданный ему
+										вопрос.
+									</p>
+									<p>
+										Помимо материала и размера монумента, основное отличие в цене происходит за счёт обработки камня.
+										Полировка сторон
+										памятника также увеличивает его стоимость. Бюджетный вариант - это полировка только лицевой стороны,
+										а
+										боковые и заднюю
+										стороны оставить с натуральным сколом.
+									</p>
+								</div>
+							</div>
+
+							<div>
+								<button
+									class="accordion border border-transparent bg-light-200 flex items-center justify-between cursor-pointer xsm:text-[18px] text-sm font-medium w-full rounded leading-6 xsm:p-[20px] p-[12px] text-left">
+									Какой лучше выбрать материал для памятника?
+									<img class="xsm:w-auto w-[20px] xsm:h-auto h-[20px]" src="./src/images/icons/pluse.svg" alt="">
+								</button>
+
+								<div
+									class="panel leading-6 text-gray-300 mt-1 xsm:text-base text-sm space-y-[27px] overflow-hidden transition-all duration-200 bg-white">
+									<p>
+										Заказывая изготовление памятника на могилу, стоит особое внимание обратить на материал памятника и
+										художественное
+										оформление. Некоторые организации экономят на материале или выдают искусственный камень за
+										натуральный.
+										Прежде, чем
+										заказать изготовление дешевого памятника в какой-либо компании желательно изучить отзывы тех, кто
+										уже
+										делал заказ.
+										Убедитесь, что в кампании работает грамотный специалист, который четко и развернуто ответит на
+										любой,
+										заданный ему
+										вопрос.
+									</p>
+									<p>
+										Помимо материала и размера монумента, основное отличие в цене происходит за счёт обработки камня.
+										Полировка сторон
+										памятника также увеличивает его стоимость. Бюджетный вариант - это полировка только лицевой стороны,
+										а
+										боковые и заднюю
+										стороны оставить с натуральным сколом.
+									</p>
+								</div>
+							</div>
+
+							<div>
+								<button
+									class="accordion border border-transparent bg-light-200 flex items-center justify-between cursor-pointer xsm:text-[18px] text-sm font-medium w-full rounded leading-6 xsm:p-[20px] p-[12px] text-left">
+									Как можно оплатить за ваши услуги?
+									<img class="xsm:w-auto w-[20px] xsm:h-auto h-[20px]" src="./src/images/icons/pluse.svg" alt="">
+								</button>
+
+								<div
+									class="panel leading-6 text-gray-300 mt-1 xsm:text-base text-sm space-y-[27px] overflow-hidden transition-all duration-200 bg-white">
+									<p>
+										Заказывая изготовление памятника на могилу, стоит особое внимание обратить на материал памятника и
+										художественное
+										оформление. Некоторые организации экономят на материале или выдают искусственный камень за
+										натуральный.
+										Прежде, чем
+										заказать изготовление дешевого памятника в какой-либо компании желательно изучить отзывы тех, кто
+										уже
+										делал заказ.
+										Убедитесь, что в кампании работает грамотный специалист, который четко и развернуто ответит на
+										любой,
+										заданный ему
+										вопрос.
+									</p>
+									<p>
+										Помимо материала и размера монумента, основное отличие в цене происходит за счёт обработки камня.
+										Полировка сторон
+										памятника также увеличивает его стоимость. Бюджетный вариант - это полировка только лицевой стороны,
+										а
+										боковые и заднюю
+										стороны оставить с натуральным сколом.
+									</p>
+								</div>
+							</div>
+
+							<div>
+								<button
+									class="accordion border border-transparent bg-light-200 flex items-center justify-between cursor-pointer xsm:text-[18px] text-sm font-medium w-full rounded leading-6 xsm:p-[20px] p-[12px] text-left">
+									Какой срок изготовления памятника?
+									<img class="xsm:w-auto w-[20px] xsm:h-auto h-[20px]" src="./src/images/icons/pluse.svg" alt="">
+								</button>
+
+								<div
+									class="panel leading-6 text-gray-300 mt-1 xsm:text-base text-sm space-y-[27px] overflow-hidden transition-all duration-200 bg-white">
+									<p>
+										Заказывая изготовление памятника на могилу, стоит особое внимание обратить на материал памятника и
+										художественное
+										оформление. Некоторые организации экономят на материале или выдают искусственный камень за
+										натуральный.
+										Прежде, чем
+										заказать изготовление дешевого памятника в какой-либо компании желательно изучить отзывы тех, кто
+										уже
+										делал заказ.
+										Убедитесь, что в кампании работает грамотный специалист, который четко и развернуто ответит на
+										любой,
+										заданный ему
+										вопрос.
+									</p>
+									<p>
+										Помимо материала и размера монумента, основное отличие в цене происходит за счёт обработки камня.
+										Полировка сторон
+										памятника также увеличивает его стоимость. Бюджетный вариант - это полировка только лицевой стороны,
+										а
+										боковые и заднюю
+										стороны оставить с натуральным сколом.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sm:p-[30px] p-[20px] rounded-1xl bg-white flex flex-col justify-between 1xs:h-[889px]">
+						<div class="flex flex-col justify-between h-full">
+							<h3
+								class="font-Vollkorn sm:text-[40px] text-[30px] leading-[36px] sm:leading-[46px] text-black-400 font-normal">
+								<span class="text-green-100">Не
+									нашли</span> на свой
+								вопрос ответ?
+							</h3>
+							<p class="font-medium text-black-400 1xs:max-w-[230px] leading-7 text-lg mt-[10px]">Оставьте свои контакты
+								и
+								мы
+								вам
+								поможем.</p>
+
+							<div>
+								<label class="mb-1 mt-[14px] font-medium text-base leading-6 text-gray-300">Ваше имя:</label>
+								<input
+									class="bg-light-200 w-full rounded font-medium text-[17px] leading-6 py-[15px] px-[17px] border border-light-900"
+									type="text" name="name">
+
+								<label class="mb-1 mt-[14px] font-medium text-base leading-6 text-gray-300">Телефон:</label>
+								<input
+									class="bg-light-200 w-full rounded font-medium text-[17px] leading-6 py-[15px] px-[17px] border border-light-900"
+									type="number" name="number">
+
+								<label class="mb-1 mt-[14px] font-medium text-base leading-6 text-gray-300">E-mail:</label>
+								<input
+									class="bg-light-200 w-full rounded font-medium text-[17px] leading-6 py-[15px] px-[17px] border border-light-900"
+									type="email" name="email">
+
+								<label class="mb-1 mt-[14px] font-medium text-base leading-6 text-gray-300">Ваш вопрос:</label>
+								<textarea
+									class="bg-light-200 w-full rounded font-medium text-[17px] leading-6 py-[15px] px-[17px] border border-light-900 h-[141px] resize-none"
+									name="message"></textarea>
+							</div>
+
+							<label class="space-x-[10px] cursor-pointer my-[14px]" for="checkbox3">
+								<input type="checkbox" name="check" id="checkbox3">
+								<span class="max-w-[210px] label-text text-base leading-5 font-medium text-gray-300">Я согласен на
+									обработку персональных
+									данных</span>
+							</label>
+							<button class="btn w-full" type="submit">Отправить</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- map section -->
+			<section class="relative">
+
+				<iframe src="https://yandex.com/map-widget/v1/?ll=60.554221%2C56.807423&z=16.83" width="100%" height="500"
+					frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+
+				<div
+					class="md:p-10 p-[20px] bg-white rounded-1xl sm:max-w-[480px] max-w-[300px] absolute top-[64px] lg:left-[250px] left-[20px]">
+					<h4 class="font-Vollkorn xsm:text-[30px] text-[25px] font-normal leading-[30px] mb-[20px] text-green-100">
+						КАМЕННЫЙ ГОРОД</h4>
+					<p class="text-sm leading-5.5 mb-[8px] text-gray-300">г. Екатеринбург, <br>
+						ул. Академика Бардина, д.6, корп. 1 (вход с ул.Бардина)</p>
+					<a class="map-link" href="#!">kamen-gorod96@ya.ru</a>
+					<div class="flex flex-wrap items-center sm:gap-10 gap-[10px] my-[20px]">
+						<div class="space-y-1">
+							<a class="font-semibold block text-[22px] leading-6 text-black-400" href="#!">8 (343) 200-05-44</a>
+							<a class="map-link" href="#!">Заказать звонок</a>
+						</div>
+						<div class="space-x-[17px] flex">
+							<a href="#!">
+								<img src="./src/images/icons/telegram.svg" alt="">
+							</a>
+							<a href="#!">
+								<img src="./src/images/icons/whatsapp.svg" alt="">
+							</a>
+						</div>
+					</div>
+					<p class="font-medium text-sm leading-5.5 text-gray-400">Режим работы:</p>
+					<p class="text-gray-300 font-normal text-sm leading-5.5">пн-пт: с 09.00 до 19.00</p>
+					<p class="text-gray-300 font-normal text-sm leading-5.5">сб-вс: с 10.00 до 18.00</p>
+				</div>
+			</section>
+
+		</main>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer-top sm:pt-[78px] sm:pb-[69px] py-[50px] bg-gray-900">
+				<div class="container text-white flex flex-wrap gap-[30px] justify-between items-start">
+					<div>
+						<h3 class="font-normal md:text-[32px] text-2xl leading-[36px] text-green-700 whitespace-nowrap">КАМЕННЫЙ
+							ГОРОД</h3>
+						<p class="text-white text-sm leading-5.5 font-medium">Изделия из натурального камня <br> Памятники от
+							производителя</p>
+						<p class="text-white text-sm leading-5.5 mt-[20px] mb-[6px] max-w-[258px]">г. Екатеринбург,
+							ул. <br> Академика Бардина, д.6, корп. 1 (вход с ул.Бардина)</p>
+						<a class="footer-link" href="#!">kamen-gorod96@ya.ru</a>
+						<a class="footer-link" href="#!">stonesity@bk.ru</a>
+						<a class="font-semibold text-[20px] leading-[32px] block mt-[20px]" href="#!">+7 (343) 200-05-44</a>
+						<a class="font-semibold text-[20px] leading-[32px] block" href="#!">+7 (908) 920-33-35</a>
+						<a class="font-semibold text-[20px] leading-[32px] block mb-1" href="#!">+7 (950) 190-80-83</a>
+						<a class="footer-link mb-[20px]" href="#!">Заказать звонок</a>
+						<p class="font-medium text-base leading-5.5">Режим работы:</p>
+						<p class="font-normal text-sm leading-5.5">пн-пт: с 09.00 до 19.00</p>
+						<p class="font-normal text-sm leading-5.5">сб-вс: с 10.00 до 18.00</p>
+					</div>
+
+					<div class="flex xlg:gap-[110px] flex-wrap gap-[30px] justify-between">
+						<div>
+							<h4 class="font-normal text-[24px] leading-[36px] font-Vollkorn mb-[24px]">Меню</h4>
+							<ul class="space-y-[10px]">
+								<li>
+									<a class="footer-top__link" href="#!">О компании</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Продукция</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Услуги</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Отзывы</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Контакты</a>
+								</li>
+							</ul>
+						</div>
+
+						<div>
+							<h4 class="font-normal text-[24px] leading-[36px] font-Vollkorn mb-[24px]">Изделия из камня</h4>
+							<ul class="space-y-[10px]">
+								<li>
+									<a class="footer-top__link" href="#!">Подоконники, отливы</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Камины, порталы</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Столешницы</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Фасады</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Лестницы</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Гибкий камень</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Мемориальные комплексы</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">Памятники</a>
+								</li>
+							</ul>
+						</div>
+
+						<div>
+							<h4 class="font-normal text-[24px] leading-[36px] font-Vollkorn mb-[24px]">Каталог камня</h4>
+							<ul class="space-y-[10px]">
+								<li>
+									<a class="footer-top__link" href="#!">Мрамор</a>
+								</li>
+								<li>
+									<a class="footer-top__link" href="#!">КаГранит</a>
+								</li>
+							</ul>
+							<h4 class="font-normal text-[24px] leading-[36px] font-Vollkorn mt-[50px] mb-[24px]">Присоединяйтесь:</h4>
+							<div class="flex space-x-[17px]">
+								<a href="#!">
+									<img class="w-[36px] h-[36px]" src="./src/images/icons/telegram.svg" alt="telegram icon">
+								</a>
+								<a href="#!">
+									<img class="w-[36px] h-[36px]" src="./src/images/icons/whatsapp.svg" alt="whatsapp icon">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom pb-[38px] pt-[36px] bg-black-800">
+				<div class="container flex flex-wrap gap-[20px] justify-between">
+					<div class="space-y-[10px]">
+						<p class="text-white text-sm leading-6">ИНН 6658543060 КПП 665801001 ОГРН 1216600019140</p>
+						<p class="text-white text-sm leading-6">© 2021-2024 Все права защищены. <br> Прием заявок
+							круглосуточно.
+							Копирование материалов с сайта только с
+							согласия
+							администрации.</p>
+					</div>
+
+					<div class="space-y-[10px]">
+						<p class="text-white text-sm leading-6">Политика конфиденциальности и cookie</p>
+						<p class="text-white text-sm leading-6">Согласие на обработку персональных данных</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- modal -->
+	<div class="search-modal modal hidden w-full h-full bg-black-100 fixed top-0 left-0 bg-opacity-70 z-[9999]">
+		<div class="relative top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] max-w-[600px]">
+			<div class="flex mb-[14px] items-center justify-between sm:mx-auto mx-[20px]">
+				<h4 class="font-semibold text-[20px] leading-6 text-white">Поиск по сайту</h4>
+				<button class="search-modal__close">
+					<img src="./src/images/icons/close.svg" alt="">
+				</button>
+			</div>
+			<div class="relative sm:mx-auto mx-[20px]">
+				<input
+					class="w-full bg-light-200 border border-light-900 py-[17px] pl-[22px] rounded leading-5.5 text-sm text-gray-300 placeholder:text-gray-300"
+					type="text" placeholder="Название нужного товара">
+				<div class="absolute top-[50%] right-[18px] cursor-pointer translate-y-[-50%]">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.133 14.867 4 11 4C7.133 4 4 7.133 4 11C4 14.867 7.133 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875Z"
+							fill="#62CF73" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="call-modal modal hidden	w-full h-full bg-black-100 fixed top-0 left-0 bg-opacity-70 z-[9999]">
+		<div class="max-w-[460px] relative top-[50%] left-[50%] pt-[22px] translate-y-[-50%] translate-x-[-50%]">
+			<div class="text-end ml-auto absolute top-0 sm:right-[-17px] right-[10px]">
+				<button class="call-modal__close">
+					<img src="./src/images/icons/close.svg" alt="">
+				</button>
+			</div>
+
+			<div
+				class="bg-white sm:mx-auto mx-[20px] xsm:rounded-1xl rounded-md sm:px-[60px] p-[20px] sm:pt-[40px] sm:pb-[50px] mt-[3px]">
+				<h3
+					class="font-normal sm:text-[40px] text-2xl leading-[46px] font-Vollkorn text-center text-black-400 mb-[6px]">
+					Заказать
+					звонок
+				</h3>
+				<label class="mb-1 mt-[14px] font-medium text-base leading-6 text-gray-300">Ваше имя:</label>
+				<input
+					class="bg-light-200 w-full rounded font-medium text-[17px] leading-6 sm:py-[15px] py-[10px] px-[17px] border border-light-900"
+					type="text" name="name">
+
+				<label class="mb-1 mt-[14px] font-medium text-base leading-6 text-gray-300">Телефон:</label>
+				<input
+					class="bg-light-200 w-full rounded font-medium text-[17px] leading-6 sm:py-[15px] py-[10px] px-[17px] border border-light-900"
+					type="number" name="number">
+
+				<label class="space-x-[10px] cursor-pointer my-[14px]" for="checkbox4">
+					<input type="checkbox" name="check" id="checkbox4">
+					<span class="max-w-[210px] label-text sm:text-base text-sm leading-5 font-medium text-gray-300">Я согласен на
+						обработку персональных
+						данных</span>
+				</label>
+				<button class="btn w-full" type="submit">Отправить</button>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- swiper js file -->
+	<script src="./src/libs/swiper-bundle.min.js"></script>
+	<!-- custom js file -->
+	<script src="./src/js/main.js"></script>
+</body>
+
+</html>
