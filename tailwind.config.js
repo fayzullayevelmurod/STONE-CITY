@@ -57,6 +57,7 @@ module.exports = {
 				"xlg": "115px",
 				"xxlg": "1140",
 				"xsm": "480px",
+				"1md": "992px",
 			}
 		},
 	},

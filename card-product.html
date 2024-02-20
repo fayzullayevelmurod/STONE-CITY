@@ -238,7 +238,7 @@
 
 		<!-- main -->
 		<main class="main">
-			<div class="container mt-[24px] mb-[30px] flex items-center gap-[11px]">
+			<div class="container mt-[24px] mb-[30px] flex items-center gap-[11px] flex-wrap">
 				<a class="flex items-center gap-[16px] font-Monserat text-sm leading-5.5" href="#!">
 					<span>Главная</span>
 					<img src="src/images/icons/next-icon2.svg" alt="">
@@ -256,14 +256,14 @@
 				<div class="container">
 					<h3 class="title-text__two">Мраморный памятник 01-38</h3>
 
-					<div class="grid items-center grid-cols-2 mt-[51px]">
+					<div class="grid items-center lg:grid-cols-2 grid-cols-1 mt-[51px]">
 						<div>
 							<img src="src/images/product-1.png" alt="product-1">
 						</div>
 
-						<div class="max-w-[700px]">
-							<div class="flex w-full gap-5">
-								<div class="sellect-dropdown relative w-[220px] h-[56px]">
+						<div class="lg:max-w-[700px]">
+							<div class="flex w-full gap-5 lg:flex-nowrap flex-wrap">
+								<div class="sellect-dropdown relative xsm:w-[220px] w-full h-[56px]">
 									<input
 										class="absolute bg-[#f9fbf9] textBox border border-[#D0E1D0] placeholder:text-base rounded placeholder:font-medium placeholder:leading-6 top-0 left-0 w-full h-full cursor-pointer px-[20px] py-[16px]"
 										type="text" placeholder="Размер" readonly="">
@@ -280,7 +280,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="sellect-dropdown relative w-[220px] h-[56px]">
+								<div class="sellect-dropdown relative xsm:w-[220px] w-full h-[56px]">
 									<input
 										class="absolute bg-[#f9fbf9] textBox border border-[#D0E1D0] placeholder:text-base rounded placeholder:font-medium placeholder:leading-6 top-0 left-0 w-full h-full cursor-pointer px-[20px] py-[16px]"
 										type="text" placeholder="Материал" readonly="">
@@ -297,7 +297,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="sellect-dropdown relative w-[220px] h-[56px]">
+								<div class="sellect-dropdown relative xsm:w-[220px] w-full h-[56px]">
 									<input
 										class="absolute bg-[#f9fbf9] textBox border border-[#D0E1D0] placeholder:text-base rounded placeholder:font-medium placeholder:leading-6 top-0 left-0 w-full h-full cursor-pointer px-[20px] py-[16px]"
 										type="text" placeholder="Цветник" readonly="">
@@ -315,10 +315,11 @@
 									</div>
 								</div>
 							</div>
-							<div class="flex items-center justify-between mt-[30px] mb-[60px]">
-								<h4 class="whitespace-nowrap text-black-400 font-semibold text-[46px] leading-6 font-Vollkorn">
+							<div
+								class="flex items-center justify-between mt-[30px] mb-[60px] 1xs:flex-nowrap flex-wrap 1xs:gap-0 gap-5">
+								<h4 class="whitespace-nowrap text-black-400 font-semibold xsm:text-[46px] text-[28px] font-Vollkorn">
 									22 000 руб.</h4>
-								<a class="btn text-center mx-[22px] min-w-[202px]" href="#!">заказать</a>
+								<a class="btn text-center 1xs:mx-[22px] xsm:min-w-[202px]" href="#!">заказать</a>
 								<div class="flex items-center gap-[12px]">
 									<img src="src/images/icons/info-icon.svg" alt="">
 									<p class="text-sm leading-5.5 text-gray-300">Точную стоимость расчитывает менеджер</p>
@@ -373,8 +374,8 @@
 			<!-- Equipment -->
 			<section class="bg-[#EFF4EF] pt-[59px] pb-[65px]">
 				<div class="container">
-					<div class="flex gap-5">
-						<div class="p-10 rounded-[15px] bg-[#fff]">
+					<div class="flex gap-5 1md:flex-nowrap flex-wrap">
+						<div class="xsm:p-10 p-[30px] rounded-[15px] bg-[#fff]">
 							<h3 class="font-Vollkorn font-normal text-[30px] leading-10 to-black-400 mb-5">Комплектация:</h3>
 							<p class="text-base text-gray-300 pb-[25px]">
 								Современное собственное профессиональное оборудование позволяет
@@ -386,7 +387,7 @@
 								можем
 								предложить приобрести у нас изделие из натурального камня по невысокой цене.</p>
 						</div>
-						<div class="p-10 rounded-[15px] bg-[#fff]">
+						<div class="xsm:p-10 p-[30px] rounded-[15px] bg-[#fff]">
 							<h3 class="font-Vollkorn font-normal text-[30px] leading-10 to-black-400 mb-5">Комплектация:</h3>
 							<p class="text-base text-gray-300 pb-[25px]">
 								Современное собственное профессиональное оборудование позволяет
@@ -403,9 +404,9 @@
 			</section>
 
 			<!-- other-products-section -->
-			<section class="py-[100px]">
+			<section class="md:py-[100px] py-[50px]">
 				<div class="container">
-					<div class="flex items-center justify-between">
+					<div class="flex items-center justify-between flex-wrap gap-5">
 						<h2 class="title-text__sm"><span>Другие товары</span> из этой категории</h2>
 
 						<div class="flex items-center gap-[65px]">
@@ -426,7 +427,7 @@
 					<div class="swiper products-swiper mt-[50px]">
 						<div class="swiper-wrapper">
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/catalog-1.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Гранитный
 									памятник 01-11</h4>
@@ -445,14 +446,14 @@
 										<span class="font-normal text-gray-700">Материал:</span> гранит
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
-									<h4 class="font-medium text-black-400 text-[24px] leading-6">12 000 руб.</h4>
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6 font-Vollkorn">12 000 руб.</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
 
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-img-1.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Мраморный
 									памятник 01-31</h4>
@@ -470,14 +471,14 @@
 										<span class="font-normal text-gray-700">Материал:</span> гранит
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
-									<h4 class="font-medium text-black-400 text-[24px] leading-6">9 500 руб.</h4>
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6 font-Vollkorn">9 500 руб.</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
 
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-img-3.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Мраморный
 									памятник 01-32</h4>
@@ -496,14 +497,14 @@
 										<span class="font-normal text-gray-700">Материал:</span> гранит
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
-									<h4 class="font-medium text-black-400 text-[24px] leading-6">12 000 руб.</h4>
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6 font-Vollkorn">12 000 руб.</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
 
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/catalog-1.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Гранитный
 									памятник 01-11</h4>
@@ -522,14 +523,14 @@
 										<span class="font-normal text-gray-700">Материал:</span> гранит
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
-									<h4 class="font-medium text-black-400 text-[24px] leading-6">12 000 руб.</h4>
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6 font-Vollkorn">12 000 руб.</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
 
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-img-1.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Мраморный
 									памятник 01-31</h4>
@@ -547,14 +548,14 @@
 										<span class="font-normal text-gray-700">Материал:</span> гранит
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
-									<h4 class="font-medium text-black-400 text-[24px] leading-6">9 500 руб.</h4>
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6 font-Vollkorn">9 500 руб.</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
 
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-img-3.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Мраморный
 									памятник 01-32</h4>
@@ -573,8 +574,8 @@
 										<span class="font-normal text-gray-700">Материал:</span> гранит
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
-									<h4 class="font-medium text-black-400 text-[24px] leading-6">12 000 руб.</h4>
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
+									<h4 class="font-medium text-black-400 text-[24px] leading-6 font-Vollkorn">12 000 руб.</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
@@ -584,9 +585,9 @@
 			</section>
 
 			<!-- Related products -->
-			<section class="related-products hero-section py-[100px]">
+			<section class="related-products hero-section md:py-[100px] py-[50px]">
 				<div class="container">
-					<div class="flex items-center justify-between">
+					<div class="flex items-center justify-between flex-wrap gap-[20px]">
 						<h2 class="title-text__sm">Сопутствующие товары</h2>
 
 						<div class="flex items-center gap-[65px]">
@@ -607,7 +608,7 @@
 					<div class="swiper products-swiper2 mt-[50px]">
 						<div class="swiper-wrapper">
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-1.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Стол и
 									лавочка 11-01</h4>
@@ -620,13 +621,13 @@
 										<span class="font-normal text-gray-700">Материал:</span> гранит/мрамор/коелга/габбро:
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
 									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-2.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Ваза 01-12
 								</h4>
@@ -638,13 +639,13 @@
 										<span class="font-normal text-gray-700">Цвет:</span> черный/серый/белый:
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
 									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-3.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Лампадка
 									02-12</h4>
@@ -657,13 +658,13 @@
 										<span class="font-normal text-gray-700">Материал:</span> гранит/мрамор/коелга/габбро:
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
 									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-1.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Стол и
 									лавочка 11-01</h4>
@@ -676,13 +677,13 @@
 										<span class="font-normal text-gray-700">Материал:</span> гранит/мрамор/коелга/габбро:
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
 									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-2.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Ваза 01-12
 								</h4>
@@ -694,13 +695,13 @@
 										<span class="font-normal text-gray-700">Цвет:</span> черный/серый/белый:
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
 									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
 							</div>
 							<div
-								class="swiper-slide border border-[#c8d6c7] py-[30px] px-[40px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
+								class="swiper-slide border border-[#c8d6c7] md:py-[30px] md:px-[40px] py-[25px] px-[20px] rounded-1xl bg-white hover:border-green-700 cursor-pointer">
 								<img class="w-[262px] h-[250px] mx-auto text-center" src="src/images/slider-product-3.png" alt="">
 								<h4 class="pt-5 pb-[10px] font-normal text-[24px] leading-10 text-black-400 font-Vollkorn">Лампадка
 									02-12</h4>
@@ -713,7 +714,7 @@
 										<span class="font-normal text-gray-700">Материал:</span> гранит/мрамор/коелга/габбро:
 									</p>
 								</div>
-								<div class="flex items-center justify-between mt-10">
+								<div class="flex items-center justify-between mt-10 flex-wrap gap-y-[20px]">
 									<h4 class="font-medium text-black-400 text-[22px] leading-7 font-Vollkorn">Цена <br> по запросу</h4>
 									<a class="btn inline-block" href="#!">заказать</a>
 								</div>
@@ -724,8 +725,8 @@
 			</section>
 
 			<!-- Delivery -->
-			<section class="py-[100px]">
-				<div class="container p-10 flex items-start gap-[50px]">
+			<section class="md:py-[100px] py-[50px]">
+				<div class="container md:p-10 flex items-start md:gap-[50px] gap-5 md:flex-row flex-col">
 					<img class="py-[17px] px-[9px]" src="src/images/icons/delivery.svg" alt="">
 					<div>
 						<h5 class="mb-5 font-Vollkorn text-[30px] leading-10">Доставка</h5>
