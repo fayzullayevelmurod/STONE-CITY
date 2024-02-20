@@ -115,9 +115,11 @@ input[type="checkbox"]:checked:after {
 .title-text {
 	@apply font-Vollkorn text-[56px] font-normal leading-[55px] text-black-400
 }
+
 .title-text__sm {
 	@apply font-Vollkorn text-[46px] font-normal leading-[56px] text-black-100
 }
+
 .title-text__two {
 	@apply font-Vollkorn text-[56px] font-normal leading-[66px];
 }
@@ -128,8 +130,17 @@ input[type="checkbox"]:checked:after {
 	@apply text-green-100;
 }
 
-.btn {
+.btn,
+.btn-outline {
 	@apply rounded-[5px] bg-green-700 px-[30px] py-4 text-sm font-semibold leading-6 text-white uppercase;
+}
+
+.btn-outline {
+	@apply bg-transparent border border-green-700 text-green-700;
+}
+
+.btn-outline:hover {
+	@apply bg-green-700 text-white;
 }
 
 .btn:hover {
@@ -371,6 +382,10 @@ swiper-button-prev {
 	@apply content-[url("../images/icons/arrow-down.svg")] z-50 absolute right-[20px] top-[35%] translate-y-[-50%] w-[12px] h-[12px];
 }
 
+.catalog .sellect-dropdown::before {
+	@apply right-[15px];
+}
+
 .sellect-dropdown.active::before {
 	@apply rotate-180 top-[62%]
 }
@@ -397,6 +412,28 @@ swiper-button-prev {
 .monuments-box .border-item::before {
 	content: none;
 }
+
+/* catalog section */
+.catalog input[type="checkbox"] {
+	@apply w-[30px] h-[30px];
+}
+
+.catalog input[type="checkbox"]:before {
+	@apply border-[#e4e9e4];
+}
+
+.catalog input[type="checkbox"]:checked::before {
+	@apply bg-green-700 border-green-700;
+}
+
+.catalog input[type="checkbox"]:after {
+	box-shadow: 4px 4px 0px 0px #fff;
+}
+
+.catalog input[type="checkbox"]::before {
+	@apply w-[28px] h-[28px];
+}
+
 /* media query */
 @media screen and (max-width: 1600px) {
 	.swiper-button-prev {
