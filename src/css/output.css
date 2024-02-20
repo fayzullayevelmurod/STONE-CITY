@@ -991,6 +991,14 @@ video {
   margin-top: 6px;
 }
 
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[50p\] {
+  margin-top: 50p;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2689,6 +2697,10 @@ video {
   padding: 30px;
 }
 
+.p-\[50px\] {
+  padding: 50px;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2812,6 +2824,26 @@ video {
 .px-\[200px\] {
   padding-left: 200px;
   padding-right: 200px;
+}
+
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[50px\] {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .pb-5 {
@@ -3180,6 +3212,10 @@ video {
 
 .leading-\[66px\] {
   line-height: 66px;
+}
+
+.leading-\[\] {
+  line-height: ;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -4680,6 +4716,10 @@ swiper-button-prev {
     max-width: 692px;
   }
 
+  .md\:max-w-\[340px\] {
+    max-width: 340px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4708,6 +4748,10 @@ swiper-button-prev {
     padding: 30px;
   }
 
+  .md\:p-\[50px\] {
+    padding: 50px;
+  }
+
   .md\:px-\[40px\] {
     padding-left: 40px;
     padding-right: 40px;
@@ -4721,6 +4765,11 @@ swiper-button-prev {
   .md\:py-\[100px\] {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .md\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .md\:pb-\[105px\] {
@@ -4757,12 +4806,20 @@ swiper-button-prev {
     line-height: 1.75rem;
   }
 
+  .md\:text-\[46px\] {
+    font-size: 46px;
+  }
+
   .md\:leading-\[40px\] {
     line-height: 40px;
   }
 
   .md\:leading-\[60px\] {
     line-height: 60px;
+  }
+
+  .md\:leading-\[56px\] {
+    line-height: 56px;
   }
 }
 
@@ -5090,8 +5147,37 @@ swiper-button-prev {
 }
 
 @media (min-width: 992px) {
+  .\31md\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .\31md\:max-w-\[327px\] {
+    max-width: 327px;
+  }
+
   .\31md\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .\31md\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .\31md\:gap-\[37px\] {
+    gap: 37px;
+  }
+
+  .\31md\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .\31md\:pt-\[90px\] {
+    padding-top: 90px;
+  }
+
+  .\31md\:pb-\[100px\] {
+    padding-bottom: 100px;
   }
 }
 
