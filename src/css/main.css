@@ -389,7 +389,11 @@ swiper-button-prev {
 .sellect-dropdown.active::before {
 	@apply rotate-180 top-[62%]
 }
-
+.catalog-product__grid-box {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	gap:20px;
+}
 .sellect-dropdown.active input {
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
