@@ -2468,6 +2468,12 @@ swiper-button-prev {
   color: rgb(115 150 120 / var(--tw-text-opacity));
 }
 
+.map-link:hover,
+.footer-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(98 207 115 / var(--tw-text-opacity));
+}
+
 .map-link::before,
 .footer-link::before {
   position: absolute;

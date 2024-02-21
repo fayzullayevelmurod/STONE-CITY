@@ -345,9 +345,8 @@ swiper-button-prev {
 
 .map-link,
 .footer-link {
-	@apply relative text-green-100 font-medium text-sm leading-5.5
+	@apply relative text-green-100 font-medium text-sm leading-5.5 hover:text-green-700
 }
-
 .map-link::before,
 .footer-link::before {
 	@apply absolute content-[''] w-full h-[0.5px] bg-green-100 bottom-[2px]
